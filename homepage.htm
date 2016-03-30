@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if !IE]><!-->
@@ -22,8 +22,8 @@
     <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <meta content="8dianhou" name="author" />
-    <link href="http://www.8dianhou.com/styles/lib-69c98f16.css" rel="stylesheet" />
-    <link href="http://www.8dianhou.com/styles/app-6d27a754.css" rel="stylesheet" />
+    <link href="css/lib-69c98f16.css" rel="stylesheet" />
+    <link href="css/app-6d27a754.css" rel="stylesheet" />
     <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 
@@ -39,7 +39,7 @@
     <div class="pull-right user-box">
         <div class="avatar">
             <figure>
-                <div class="avatar-circle img-circle" style="background-image:url(http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png?size=40,40)"></div>
+                <div class="avatar-circle img-circle" style="background-image:url(pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)"></div>
                 <!-- <img src="../images/avatar.png" th:src="@{${(session['account'] != null && session['account'].avatarUrl != null) ? session['account'].avatarUrl + '?size=40,40' : '/resources/images/anonymous.jpg'}}" class="img-circle"> -->
             </figure>
             <div class="pull-right"><span>李知周</span><i class="fa fa-caret-down"></i></div>
@@ -92,7 +92,7 @@
                 <div class="media">
                     <div class="pull-left">
                         <!-- <img src="../images/avatar.png" class="img-circle" th:src="${advisor.basicProfile.avatarUrl}"> -->
-                        <div class="avatar-circle img-circle" style="background-image:url(http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)">
+                        <div class="avatar-circle img-circle" style="background-image:url(pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)">
                         </div>
                         <p>
                             <i class="fa fa-star"></i>
@@ -125,7 +125,7 @@
                 </ul>
                 <div class="tutor-card">
                     <figure>
-                        <div class="avatar-circle img-circle" style="background-image:url(http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)">
+                        <div class="avatar-circle img-circle" style="background-image:url(pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)">
                         </div>
                     </figure>
                     <i class="fa heart" ng-class="vm.favoriteClass()" ng-click="vm.favorite()" ng-init="vm.favoriteInit(false)"></i>
@@ -164,7 +164,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「创新起航」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「创新起航」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="34BFB3A7" data-sprice="100" data-sduration="60" data-sname="创新起航">预约</button>
                                         </div>
@@ -194,7 +194,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「公司创业失败记」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「公司创业失败记」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="F9635E69" data-sprice="100" data-sduration="60" data-sname="公司创业失败记">预约</button>
                                         </div>
@@ -224,7 +224,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「开源软件与硬件的系统集成与快速原型设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「开源软件与硬件的系统集成与快速原型设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="8408EF97" data-sprice="100" data-sduration="60" data-sname="开源软件与硬件的系统集成与快速原型设计">预约</button>
                                         </div>
@@ -254,7 +254,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「嵌入式电子系统设计起航」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「嵌入式电子系统设计起航」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="763CC093" data-sprice="100" data-sduration="60" data-sname="嵌入式电子系统设计起航">预约</button>
                                         </div>
@@ -284,7 +284,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「物联网、万物互联解决方案设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「物联网、万物互联解决方案设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="FF185FA7" data-sprice="100" data-sduration="60" data-sname="物联网、万物互联解决方案设计">预约</button>
                                         </div>
@@ -314,7 +314,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「互联网+解决方案设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「互联网+解决方案设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="8F5150E2" data-sprice="200" data-sduration="60" data-sname="互联网+解决方案设计">预约</button>
                                         </div>
@@ -344,7 +344,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「高科技企业技术面试分享」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「高科技企业技术面试分享」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="9E2C580E" data-sprice="100" data-sduration="60" data-sname="高科技企业技术面试分享">预约</button>
                                         </div>
@@ -374,7 +374,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「全国电子设计大赛培训指导」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「全国电子设计大赛培训指导」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="326F9382" data-sprice="100" data-sduration="60" data-sname="全国电子设计大赛培训指导">预约</button>
                                         </div>
@@ -404,7 +404,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「如何开好头脑风暴会议」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「如何开好头脑风暴会议」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="E3DE402D" data-sprice="100" data-sduration="30" data-sname="如何开好头脑风暴会议">预约</button>
                                         </div>
@@ -434,7 +434,7 @@
                                             <p class="pull-left share-box">
                                                 <span>分享到：</span>
                                                 <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
-                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「欧洲穷游故事」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="http://www.8dianhou.com/api/avatar/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「欧洲穷游故事」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
                                             </p>
                                             <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="526249A4" data-sprice="100" data-sduration="60" data-sname="欧洲穷游故事">预约</button>
                                         </div>
@@ -453,7 +453,7 @@
                                 
                                 
 
-                                <img alt="tutorImage" class="col-xs-8" src="http://www.8dianhou.com/api/avatar/avatar-494efd6a-99b1-4b34-aab2-3976fe4cacc0.png" />
+                                <img alt="tutorImage" class="col-xs-8" src="pic/avatar-494efd6a-99b1-4b34-aab2-3976fe4cacc0.png" />
                                 
                             </div>
                             <p>当你在「8点后」细看李知周的履历，大概能揣测出这样的人生——武大本科，中国科学院硕博连读5年。之后，创过业，也踩过坑；有过硬的技术及科研经验，也不乏实战……<br><br>李知周目前的主要工作是在思科做软件工程师。“在公司相当于是个team leader，集合大家经常做一些头脑风暴，去解决一些实际问题。”别人口中新奇的所谓“创新”，是李知周和他的团队的家常便饭。在他眼里，“创新”并不是对原有认知的全面颠覆，而是在周详的计划下，寻找单点突破。<br><br>读博期间，李知周就曾和他的同学合伙，有过一次短暂的创业经历，“做智能硬件方面的测试仪器，提供外包服务，不过后来失败了。”提起当年创业踩过的坑，李知周直言，并不遗憾。“至少自己尝试过了。”<br><br>工作之余，穷游也体现了李知周生活极客的一面。有意思的是，他觉得旅行和人生的态度是相同的，你要做的，是搭好框架的同时，给自己预留足够的空间来应对不期而遇的突发情况。而实现充分的准备，绝对能加速执行的过程。相信对于旅游有着独到看法和热忱的他，一定可以告诉你一些当地不为人知的捷径、各国风情以及景点和退税等。<br><br>希望通过分享激励创新是李知周在「8点后」的初衷。</p>
