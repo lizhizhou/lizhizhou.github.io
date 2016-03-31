@@ -1,8 +1,522 @@
-<!DOCTYPE html>
-<html>
-  <script language="javascript">
-           window.location.href="http://www.8dianhou.com/advisor/IAM-A-11-20-2014-D74160AB"; 
+﻿<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html ng-app="app">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+    /* This helps the ng-show/ng-hide animations start at the right place. */
+    /* Since Angular has this but needs to load, this gives us the class early. */
+    
+    .ng-hide {
+        display: none!important;
+    }
+    </style>
+    <title>李知周  Software engineer at Morgan Stanley  在“8点后”，约TA聊聊吧！ | 8点后</title>
+    <meta content="李知周 - 软件与互联网 ｜ 8点后" name="keywords" />
+    <meta content="从事信息安全软件开发，拥有跨专业领域的思维逻辑，同时也是拥有中美多项专利的软件工程师 ｜ 8点后" name="description" />
+    <meta charset="utf-8" />
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="8dianhou" name="author" />
+    <link href="css/lib-69c98f16.css" rel="stylesheet" />
+    <link href="css/app-6d27a754.css" rel="stylesheet" />
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body ng-controller="AdvisorDetailsController as vm">
+    <header class="header white-header">
+    <a class="brand-logo pull-left" target="_self" href="/"></a>
+    <div class="pull-left">
+    </div>
+    <div class="pull-right user-box">
+        <div class="avatar">
+            <figure>
+                <div class="avatar-circle img-circle" style="background-image:url(pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)"></div>
+                <!-- <img src="../images/avatar.png" th:src="@{${(session['account'] != null && session['account'].avatarUrl != null) ? session['account'].avatarUrl + '?size=40,40' : '/resources/images/anonymous.jpg'}}" class="img-circle"> -->
+            </figure>
+            <div class="pull-right"><span>李知周</span><i class="fa fa-caret-down"></i></div>
+        </div>
+    </div>
+    <div class="pull-right alert-box" ng-controller="MessageController as vm">
+        <div ng-class="{ active : vm.hasUnreadMessage()}" ng-mouseover="vm.hoverMessage()">
+        </div>
+    </div>
+    
+    <div class="pull-right">
+  
+        
+        
+    </div>
+    <div class="pull-right app-box">
+    
+    </div>
+</header>
+    <div class="content">
+        <div class="tutor-bg">
+            <div class="container">
+                <div class="media">
+                    <div class="pull-left">
+                        <!-- <img src="../images/avatar.png" class="img-circle" th:src="${advisor.basicProfile.avatarUrl}"> -->
+                        <div class="avatar-circle img-circle" style="background-image:url(pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)">
+                        </div>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                    </div>
+                    <div class="media-body">
+                        <h3>
+                            <span>李知周</span>
+                            
+                        </h3>
+                        <h4>Software engineer at Morgan Stanley</h4>
+                        <p>从事信息安全软件开发，拥有跨专业领域的思维逻辑，同时也是拥有中美多项专利的软件工程师</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav tutorMenu-box">
+            <div class="container">
+                <ul>
+                    <li class="active"><a href="#tutor-topic" title="">话题</a></li>
+                    <li><a href="#tutor-about" title="">关于</a></li>
+                    <li><a href="#tutor-career" title="">工作经历</a></li>
+                    <li><a href="#tutor-edu" title="">教育经历</a></li>
+                </ul>
+                <div class="tutor-card">
+                    <figure>
+                        <div class="avatar-circle img-circle" style="background-image:url(pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png)">
+                        </div>
+                    </figure>
+                    <i class="fa heart" ng-class="vm.favoriteClass()" ng-click="vm.favorite()" ng-init="vm.favoriteInit(false)"></i>
+                    <p class="tutor-name">李知周</p>
+                    <p class="tutor-title">Software engineer at Morgan Stanley</p>
+                    <div class="card-footer">
+                        <a class="btn-simple" ng-click="vm.openAskQuestion()">向TA提问</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="block" id="tutor-topic">
+                        <header> <span>李知周</span>很愿意跟你分享如下话题</header>
+                        <ul>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/500_1.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>创新起航</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「创新起航」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="34BFB3A7" data-sprice="100" data-sduration="60" data-sname="创新起航">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">根据自己在工作中的两次美国专利的成功申请以及一次中国专利申请中的实践与经验，讲授如何从零开始进行创新，并讲解在创新过程中所必需具备的基本能力。同时，根据自己的经验总结，讨论如何带动整个团队进行创新，将创新的基因植入到每个成员身上，以及如何在大公司中进行创新。同时，讲解创新成果的转化以及专利的申请流程。</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/500_2.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>公司创业失败记</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「公司创业失败记」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="F9635E69" data-sprice="100" data-sduration="60" data-sname="公司创业失败记">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">成功是不可复制的，但是失败是绝对不能去复制的。在这里分享一下初创公司失败的经历，希望别人不要犯同样的错误</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/500_2.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>开源软件与硬件的系统集成与快速原型设计</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「开源软件与硬件的系统集成与快速原型设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="8408EF97" data-sprice="100" data-sduration="60" data-sname="开源软件与硬件的系统集成与快速原型设计">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">通过我在参与开源软硬件项目中经验，分享如何在创业过程中，利用庞大的开源资源，实现创业方案与想法的快速实现与演示。<br>项目网址：<a href="https://www.hwtrek.com/project/3KEl%2FPAEQSo%3D">https://www.hwtrek.com/project/3KEl%2FPAEQSo%3D</a></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/700_3.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>嵌入式电子系统设计起航</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「嵌入式电子系统设计起航」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="763CC093" data-sprice="100" data-sduration="60" data-sname="嵌入式电子系统设计起航">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">根据本人在电子行业多年的经验总结。讲解在项目设计过程中，对电子系统的选型、评估，软硬件协同设计的方法与技巧。如何在项目中采用恰当的电子系统以满足项目的需要，同时控制成本不做过度设计。</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/700_3.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>物联网、万物互联解决方案设计</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「物联网、万物互联解决方案设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="FF185FA7" data-sprice="100" data-sduration="60" data-sname="物联网、万物互联解决方案设计">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">根据自己在互联网与通信领域的人脉与经验，为客户提供切实可行的的物联网解决方案设计，并提供从方案论证，设计调试到批量生产的每一个环节的咨询与服务。为传统企业向物联网过度提供有力支持</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/700_1.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>互联网+解决方案设计</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>200</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「互联网+解决方案设计」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="8F5150E2" data-sprice="200" data-sduration="60" data-sname="互联网+解决方案设计">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">根据自己在过去机电一体化控制项目中的经验以及在通信类企业中的工作经验，提供为传统企业进入互联网+时代提供咨询建议以及方案设计与实现</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/1100_3.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>高科技企业技术面试分享</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「高科技企业技术面试分享」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="9E2C580E" data-sprice="100" data-sduration="60" data-sname="高科技企业技术面试分享">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">分享自己在摩根史丹利、思科、苹果、阿里、腾讯、高通等高科技类公司的面试经验，利用自己作为面试官面试他人的经验，给希望去进入高科技企业的同学提供一些指导与建议。</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/800_1.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>全国电子设计大赛培训指导</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「全国电子设计大赛培训指导」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="326F9382" data-sprice="100" data-sduration="60" data-sname="全国电子设计大赛培训指导">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">根据自己在电子设计大赛中的体验，以及作为老师在电子设计大赛培训过程中的指导经验，帮助学生提高电子设计能力，提高学生将来在找工作过程中的职业技能</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/800_2.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>如何开好头脑风暴会议</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>30</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「如何开好头脑风暴会议」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="E3DE402D" data-sprice="100" data-sduration="30" data-sname="如何开好头脑风暴会议">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">分享自己在世界500强外资中组织与主持头脑风暴会议的经验，帮助提高会议的组织能力与提高小组内的创新能力与积极性</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic-box">
+                                    <a class="pull-left" href="" title="">
+                                        <img alt="" src="pic/900_1.png" />
+                                    </a>
+                                    <div class="topic-body">
+                                        <div class="line">
+                                            <h5 class="pull-left"><span>欧洲穷游故事</span></h5>
+                                            <span class="pull-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <div class="line">
+                                            <p class="pull-left"><span>100</span>元/次 <span>60</span>分钟</p>
+                                            <p class="pull-left share-box">
+                                                <span>分享到：</span>
+                                                <a class="fa fa-wechat" wx-share="advisor" wx-share-id="IAM-A-11-20-2014-D74160AB"></a>
+                                                <a class="fa fa-weibo" weibo-share="" wb-title="推荐话题 : 「欧洲穷游故事」——李知周  Software engineer at Morgan Stanley (分享自「8点后」)" wb-pic="pic/avatar-e9e35a93-5787-447a-8e81-d74156e1e8a6.png"></a>
+                                            </p>
+                                            <button class="btn btn-liang pull-right" ng-click="vm.selectService($event)" data-aid="IAM-A-11-20-2014-D74160AB" data-sid="526249A4" data-sprice="100" data-sduration="60" data-sname="欧洲穷游故事">预约</button>
+                                        </div>
+                                        
+                                        <div class="line long-content" word-height="36">2013年完成欧洲3国22天的自由旅行。讲述欧洲省钱攻略，旅游安排，签证申请。以最优化的价格享受最好的服务。如何独自主处理在旅游中的突发情况。</div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="block" id="tutor-about">
+                        <header>关于TA</header>
+                        <article>
+                            <div class="row">
+                                
+                                
+
+                                <img alt="tutorImage" class="col-xs-8" src="pic/avatar-494efd6a-99b1-4b34-aab2-3976fe4cacc0.png" />
+                                
+                            </div>
+                            <p>当你在「8点后」细看李知周的履历，大概能揣测出这样的人生——武大本科，中国科学院硕博连读5年。之后，创过业，也踩过坑；有过硬的技术及科研经验，也不乏实战……<br><br>李知周目前的主要工作是在思科做软件工程师。“在公司相当于是个team leader，集合大家经常做一些头脑风暴，去解决一些实际问题。”别人口中新奇的所谓“创新”，是李知周和他的团队的家常便饭。在他眼里，“创新”并不是对原有认知的全面颠覆，而是在周详的计划下，寻找单点突破。<br><br>读博期间，李知周就曾和他的同学合伙，有过一次短暂的创业经历，“做智能硬件方面的测试仪器，提供外包服务，不过后来失败了。”提起当年创业踩过的坑，李知周直言，并不遗憾。“至少自己尝试过了。”<br><br>工作之余，穷游也体现了李知周生活极客的一面。有意思的是，他觉得旅行和人生的态度是相同的，你要做的，是搭好框架的同时，给自己预留足够的空间来应对不期而遇的突发情况。而实现充分的准备，绝对能加速执行的过程。相信对于旅游有着独到看法和热忱的他，一定可以告诉你一些当地不为人知的捷径、各国风情以及景点和退税等。<br><br>希望通过分享激励创新是李知周在「8点后」的初衷。</p>
+                        </article>
+                    </div>
+                    <div class="block" id="tutor-career">
+                        <header>工作经历</header>
+                        <ul>
+                            <li>
+                                <span class="col-xs-5 companyName">Morgan Stanley</span>
+                                <span class="col-xs-4 personalTitle">Software Engineer</span>
+                                <span class="col-xs-3 date">
+                <span>2015</span>年–<span>目前</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="col-xs-5 companyName">Cisco</span>
+                                <span class="col-xs-4 personalTitle">Team Lead</span>
+                                <span class="col-xs-3 date">
+                <span>2014</span>年–<span>2015年</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="col-xs-5 companyName">Cisco</span>
+                                <span class="col-xs-4 personalTitle">Software Engineer</span>
+                                <span class="col-xs-3 date">
+                <span>2011</span>年–<span>2015年</span>
+                                </span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="block" id="tutor-edu">
+                        <header>教育经历</header>
+                        <ul>
+                            <li>
+                                <span class="col-xs-5 companyName">Chinese Academy Of Sciences</span>
+                                <span class="col-xs-4 personalTitle">
+                <span>Doctor of Philosophy (Ph.D.)|Communication &amp; Information System</span>
+                                
+                                
+                                </span>
+                                <span class="col-xs-3 date">
+                            <span>2006年–2011年</span>
+                                
+                                
+                                </span>
+                            </li>
+                            <li>
+                                <span class="col-xs-5 companyName">Wuhan University</span>
+                                <span class="col-xs-4 personalTitle">
+                <span>Bachelor&#39;s Degree|Electronic and Information Engineering</span>
+                                
+                                
+                                </span>
+                                <span class="col-xs-3 date">
+                            <span>2002年–2006年</span>
+                                
+                                
+                                </span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                   
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="container">
+    </div>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-53114421-1', 'auto');
+    ga('send', 'pageview');
+
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faa52af4b6c57178f8242bb85bc704c5a' type='text/javascript'%3E%3C/script%3E"));
     </script>
-<body>
-</body>
-</html>
+</footer>
+    <script type="text/javascript">
+    var ADVISOR_ID = "IAM-A-11-20-2014-D74160AB";
+    </script>
+    <script src="http://www.8dianhou.com/js/lib-639b33ef.js"></script>
+    <script src="http://www.8dianhou.com/js/app-4c1f53db.js"></script>
+
+
+
+</body></html>
