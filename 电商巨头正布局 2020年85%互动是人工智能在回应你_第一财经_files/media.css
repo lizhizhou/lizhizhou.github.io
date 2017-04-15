@@ -1,0 +1,282 @@
+﻿/* media */
+/* 横屏 */
+@media screen and (orientation:landscape){
+.m-pageName{left:16%;}
+.m-list7 li img {height:120px;}
+.m-list8 li { background: url(../images/main_36.jpg) no-repeat; background-position: 2.1% 0; background-size: 12px auto; }
+.m-share li{ width:12%; height:46px;}  
+.m-share .li-1{ background: url(../images/main_12.png) no-repeat center center; background-size:48%  auto; }
+.m-share .li-2{ background:url(../images/main_14.png) no-repeat center center; background-size:48%  auto}
+.m-share .li-3{ background:url(../images/main_16.png) no-repeat center center; background-size:48%  auto}
+.m-share .li-4{ background:url(../images/main_18.png) no-repeat center center; background-size:48% auto} 
+.m-count1{bottom:-80px;}
+.searchBtn a{ background-size:40% auto;}
+.m-video .span2{ background:url(../images/main_10.png) center center no-repeat; background-size:50% auto}
+.m-menuBar dt a.fold{  background-size:3% auto;}
+.m-menuBar dt a.unfold{  background-size:3% auto;}
+.m-list2-1 li img{ height:260px;}
+.m-list2-1 .play {  width: 20%; height: 32%; background-size:44% auto; }
+.m-text-h{ height:109px;}
+.m-list13 i{  right:86px;}
+.m-list14 i{  right:80px;}
+.m-list15{  top:10%;}
+.m-list17 .txt img{ width:25%;}
+.m-describe p { height:54px;}
+}
+/* 竖屏 */
+@media screen and (orientation:portrait){
+
+}
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+.searchBtn a{ background-size:40% auto;}
+.m-title{ line-height:10px;}
+.m-title h2{font-size:2.6em;}
+.m-table-1 td{ font-size:2.2em;}
+.m-pageName{left:20%; font-size:2.3em}
+.m-txt h1 { font-size:2.9em;}
+.m-txt h2 { font-size:2.2em;line-height:1.4em;}
+.m-text p {  font-size: 2.5em; line-height:1.6em}
+.m-text-1 p { font-size: 2.3em;}
+.searchBtn a{ background-size:67% auto;}
+.m-news a, .m-news a:hover {font-size:2.5em;}
+.m-list a, .m-list a:hover {font-size:2.5em;}
+.m-list p { font-size:1.2em;}
+.m-list2 h3 { height:84px;}
+.m-list2 h3 a, .m-list2 h3 a:hover { font-size:2.3em; line-height:1.5em;}
+
+.m-list3 h3 a, .m-list3 h3 a:hover { line-height:1.4em; font-size:2.3em;}
+.m-list4 dl dd h3 a, .m-list4 dl dd h3 a:hover {  font-size:2.5em;}
+.m-list5 h3 a, .m-list5 h3 a:hover { font-size: 2.5em; line-height:1.4em;}
+.m-list6 h3 {}
+.m-list6 h3 a, .m-list6 h3 a:hover { font-size:2.3em; line-height:1.3em;}
+.m-list6 p{ padding:5% 4% 0 4%; font-size:2em;}
+.m-list7 h3 { height:44px;}
+.m-list7 h3 a, .m-list7 h3 a:hover { font-size:1.3em; line-height:1.5em;}
+.m-list7 li img {height:80px;}
+.m-menuBar dt a,.m-menuBar dt a:hover{ font-size:1.5em;}
+.m-menuBar dd a,.m-menuBar dd a:hover{ font-size:1.5em;}
+.m-list2-1 li img{ height:271px;}
+/*ipad*/
+.g-hd{ height:80px;}
+.m-table th{ font-size:2.4em;}
+.m-table td{ font-size:2.2em;}
+.m-table-1 th{ font-size:2.4em;}
+.m-logo{ height:80px; background-size:122px auto;}
+.m-pageName{ line-height:80px;}
+.u-btn a, .u-btn a:hover {font-size: 2.2em;}
+.m-box h1 a, .m-box1-1 h1 a:hover { font-size: 2.2em; }
+.m-menu a{ background-size:44px auto}
+.m-menu{ top:12px; right:10px;}
+.m-link a, .m-link a:hover, .m-link span{ font-size:2.3em}
+.g-ft p{ font-size:2em;}
+.m-list5 h2 { font-size: 2.5em;}
+.m-list5 p{ font-size:2em;}
+.m-tips2 { font-size: 2.2em; }
+.m-tips2 p { font-size: 1.6em; }
+}
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:767px){
+
+    
+}
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+    
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+    
+}
+
+/* 6p 窗口宽度<415 */
+@media screen and (max-width:767px) {
+
+.searchBtn a{ background-size:28px auto;}
+.m-title{ line-height:30px;}
+.m-title h2{font-size:1.6em;}
+.m-table-1 td{ font-size:1.2em;}
+.m-table1 h2{ font-size:1.2em}
+.m-pageName{left:24%; font-size:1.3em}
+.m-txt h1 { font-size:1.9em;}
+.m-txt h2 { font-size:1.2em;line-height:1.4em;}
+.m-text p {  font-size: 1.5em; line-height:1.6em}
+.m-text-1 p { font-size: 1.3em;}
+.searchBtn a{ background-size:67% auto;}
+.m-news a, .m-news a:hover {font-size:1.5em;}
+.m-list a, .m-list a:hover {font-size:1.5em;}
+.m-list p { font-size:1.2em;}
+.m-list2 h3 { height:41px;}
+.m-list2 h3 a, .m-list2 h3 a:hover { font-size:1.3em; line-height:1.3em;}
+
+.m-list3 h3 a, .m-list3 h3 a:hover {font-size: 1.3em; line-height:1.6em;}
+.m-list4 dl dd h3 a, .m-list4 dl dd h3 a:hover {  font-size:1.5em;}
+.m-list5 h3 a, .m-list5 h3 a:hover { font-size: 1.5em; line-height:1.4em;}
+.m-list6 h3 {}
+.m-list6 h3 a, .m-list6 h3 a:hover { font-size:1.3em; line-height:1.3em;}
+.m-list6 p{ padding:5% 4% 0 4%; font-size:1em;}
+.m-list7 h3 { height:44px;}
+.m-list7 h3 a, .m-list7 h3 a:hover { font-size:1.3em; line-height:1.5em;}
+.m-list7 li img {height:80px;}
+.m-list9  h3 a, .m-list9  h3 a:hover { font-size:1.5em;}
+.m-menuBar dt a,.m-menuBar dt a:hover{ font-size:1.5em;}
+.m-menuBar dd a,.m-menuBar dd a:hover{ font-size:1.5em;}
+.m-list2-1 li img{ height:110px;}
+.m-list2-2 li img{ height:106px;}
+
+/*ipad*/
+.g-hd{ height:50px;}
+.m-table th{ font-size:1.4em;}
+.m-table td{ font-size:1.2em;}
+.m-table-1 th{ font-size:1.4em;}
+.m-logo{ height:50px; background-size:77px auto;}
+.m-pageName{ line-height:50px;}
+.u-btn a, .u-btn a:hover {font-size: 1.2em;}
+.m-box h1 a, .m-box1-1 h1 a:hover { font-size: 1.2em; }
+.m-menu a{ background-size:28px auto}
+.m-menu{ top:0px; right:0px;}
+.m-link a, .m-link a:hover, .m-link span{ font-size:1.3em}
+.g-ft p{ font-size:1em;}
+.m-list5 h2 { font-size: 1.3em;}
+.m-list5 p{ font-size:1em;}
+.m-tips2 { font-size: 1.2em; }
+.m-tips2 p { font-size: 1.4em; }
+
+}
+/* 6 窗口宽度<375 */
+@media screen and (max-width:376px) {
+.searchBtn a{ background-size:67% auto;}
+.m-title{ line-height:40px;}
+.m-title h2{font-size:1.4em;}
+.m-table-1 td{ font-size:1.1em;}
+.m-table1 td{ font-size: 1.1em; }
+.m-table1 h2{ font-size:1.2em}
+.m-pageName{  left:27%;font-size:1.2em}
+.m-txt h1 { font-size:1.8em;}
+.m-txt h2 { font-size:1.2em; line-height:1.4em;}
+.m-text p {  font-size: 1.3em; line-height:1.7em}
+.m-text-1 p {  font-size: 1.3em; line-height:1.5em;}
+
+.m-news a, .m-news a:hover {font-size:1.3em;}
+.m-list a, .m-list a:hover {font-size:1.3em;}
+.m-list p { font-size:1.1em;}
+.m-list2 h3 { height:38px;}
+.m-list2 h3 a, .m-list2 h3 a:hover { font-size:1.2em; line-height:1.3em;}
+
+.m-list3 h3 a, .m-list3 h3 a:hover {font-size: 1.3em; line-height:1.5em;}
+.m-list4 dl dd h3 a, .m-list4 dl dd h3 a:hover {font-size:1.3em; line-height:1.4em;}
+.m-list5 h3 a, .m-list5 h3 a:hover { font-size: 1.3em; line-height: 1.4em; }
+.m-list6 h3 {}
+.m-list6 h3 a, .m-list6 h3 a:hover { font-size:1.2em; line-height:1.3em;}
+.m-list6 p{ padding:3% 4% 0 4%;}
+.m-list7 h3 { height:44px;}
+.m-list7 h3 a, .m-list7 h3 a:hover { font-size:1.2em; line-height:1.3em;}
+.m-list7 li img {height:72px;}
+.m-menuBar dt a,.m-menuBar dt a:hover{ font-size:1.3em;}
+.m-menuBar dd a,.m-menuBar dd a:hover{ font-size:1.3em;}
+.m-list2-1 li img{ height:99px;}
+.m-list2-2 li img{ height:96px;}
+.m-list8 p{ font-size:1.3em}
+.m-list9  h3 a, .m-list9  h3 a:hover {font-size:1.3em; line-height:1.4em;}
+.m-tips3 { font-size: 1.1em;}
+.m-tips4 { font-size: .9em;}
+.m-video h3 a,.m-video h3 a:hover { font-size:1.2em; line-height:1.3em;}
+.u-btn1 a{ font-size:1.3em;}
+.m-text-h{ height:96px;}
+.m-table4 .td3of6 { font-size:1.2em}
+.m-table4 .td4of6 {font-size:1.2em}
+.m-list10 h3 {font-size:1.3em; }
+.u-btn1 a.unfold{ font-size:1.3em;}
+.u-btn1 a.fold{ font-size:1.3em;}
+.u-btn1 a.unfold1{ font-size:1.3em;}
+.u-btn1 a.fold1{ font-size:1.3em;}
+.m-tips4 { top:15px; }
+.m-list11  p {font-size:1.3em;line-height:1.3em; }
+.m-list12 .txt h3{font-size:1.3em;}
+.m-list11  .u-ph { height:42px; }
+.m-list15 h3{ font-size:1.3em;}
+.m-table7 span{ font-size:1.3em;}
+.infoTips{ font-size:1.3em;}
+.m-describe p { font-size: 1.1em; }
+/*ipad*/
+.m-list5 h2 { font-size: 1.3em; line-height:1.3em;}
+}
+/* 5 或者 4 窗口宽度<320 */
+@media screen and (max-width:320px) {
+.searchBtn a{ background-size:67% auto;}
+.m-title{ line-height:40px;}
+.m-title h2{font-size:1.3em;}
+.m-table-1 td{ font-size:.9em;}
+.m-table1 td{ font-size: .9em; }
+.m-table1 h2{ font-size:1.2em}
+
+.m-pageName{left:28%;}
+.m-txt h1 { font-size:1.7em;}
+.m-txt h2 { font-size:1.2em;line-height:1.3em;}
+.m-text p {  font-size: 1.2em; line-height:1.6em;}
+.m-text-1 p { font-size: 1.2em; line-height:1.5em;}
+
+
+.m-news a, .m-news a:hover {font-size:1.2em; line-height:1.6em;}
+.m-list a, .m-list a:hover {font-size:1.2em; line-height:1.6em;}
+.m-list p { font-size:1em;}
+.m-list2 h3 { height:37px;}
+.m-list2 h3 a, .m-list2 h3 a:hover { font-size:1.2em; line-height:1.3em;}
+
+.m-list3 h3 a, .m-list3 h3 a:hover {font-size: 1.2em; line-height:1.4em;}
+.m-list4 dl dd h3 a, .m-list4 dl dd h3 a:hover {font-size:1.2em;}
+.m-list5 h3 a, .m-list5 h3 a:hover { font-size: 1.2em; line-height: 1.4em; }
+
+.m-list5 p { font-size: .9em; }
+.m-list6 h3 {}
+.m-list6 h3 a, .m-list6 h3 a:hover { font-size:1.2em; line-height:1.3em;}
+.m-list6 p{ padding:2% 4% 0 4%;}
+.m-list7 h3 { height:37px;}
+.m-list7 h3 a, .m-list7 h3 a:hover { font-size:1.2em; line-height:1.3em;}
+.m-list7 li img {height:61px;}
+.m-menuBar dt a,.m-menuBar dt a:hover{ font-size:1.2em;}
+.m-menuBar dd a,.m-menuBar dd a:hover{ font-size:1.2em;}
+.u-ipt{font-size:1.2em;}
+.m-list2-1 li img{ height:84px;}
+.m-list2-2 li img{ height:82px;}
+.m-list8 p{ font-size:1.2em}
+.m-list9  h3 a, .m-list9  h3 a:hover { font-size:1.2em;}
+.m-tips3 { font-size: 1.1em;}
+.m-tips4 { font-size: .78em;}
+.u-btn1 a{ font-size:1.2em;}
+.m-text-h{ height:85px;}
+.m-table2 td{ font-size:1.2em;}
+.m-list10 h3 {font-size:1.2em;  padding-left:10%; background-size:14px auto;}
+.u-btn1 a.unfold{ font-size:1.2em;}
+.u-btn1 a.fold{ font-size:1.2em;}
+.u-btn1 a.unfold1{ font-size:1.2em;}
+.u-btn1 a.fold1{ font-size:1.2em;}
+.m-tips4 { top:14px; }
+.m-list11  p {font-size:1.2em; }
+.m-list11  h3 a, .m-list11  h3 a:hover { font-size: 1.3em; }
+.m-list11  .u-ph { height:38px; }
+.m-list15 h3{ font-size:1.2em; }
+.u-textarea{font-size: 1.2em;}
+.m-table7 span{ font-size:1.2em;}
+.u-ipt1{font-size: 1.2em;}
+.u-select{ font-size: 1.2em;}
+.infoTips{ font-size:1.2em;}
+.m-list17 li a{font-size:1.1em; }
+.m-list18 h2{ font-size:1.2em;}
+
+/*ipad*/
+.m-table-1 th {font-size:1.2em;}
+.m-list5 h2 { font-size: 1em; }
+.u-btn a, .u-btn a:hover { font-size: 1em;}
+}
+
+
+
+/* windows UI 贴靠 */
+@media screen and (-ms-view-state:snapped){
+    
+}
+/* 打印 */
+@media print{
+    
+}
