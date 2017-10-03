@@ -1,0 +1,116 @@
+﻿
+body, p, div, td
+{
+	 
+	 
+	font-family: 微软雅黑;
+	line-height: 1.8;
+}
+#report
+{
+	width: 785px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.pctitle
+{
+	padding: 8px;
+	background-color: #AD0401;
+	color: #FFFFFF;
+	font-size: 26px;
+	text-align: center;
+	letter-spacing: 3mm;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.num
+{
+	color: #AD0401;
+	font-weight: bold;
+}
+#titlePic
+{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.l
+{
+	float: left;
+}
+.r
+{
+	float: right;
+	 
+	margin-bottom: 0px;
+}
+.clear
+{
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+	
+}
+#copyright
+{
+	text-align: center;
+	width: 100%;
+	margin-top: 300px;
+}
+#menu
+{
+}
+#menu h1
+{
+	font-size: 30px;
+	text-align: center;
+}
+#menu .line
+{
+	background-image: url('../Images/t_line.png');
+	background-repeat: repeat-x;
+	background-position: center;
+	width: 785px;
+}
+#menu .line div
+{
+	padding: 6px;
+	background-color: #FFFFFF;
+}
+
+#menu .f
+{
+	margin-left: 30px;
+	width: 755px;
+}
+.b
+{
+	font-weight: bold;
+}
+.m {text-align:center; }
+#comprehensive .title
+{
+	color: #AD0401;
+	font-weight: normal;
+}
+#squares ,#squares td
+{
+	border: 1px solid #000000;
+}
+#squares td
+{
+	padding: 5px;
+}
+#squares .select
+{
+	background-color: #CACACA;
+}
+#squares .title
+{
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.red
+{
+	color: #CC3300;
+}
