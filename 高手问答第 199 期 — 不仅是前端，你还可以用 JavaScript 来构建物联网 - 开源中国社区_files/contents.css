@@ -1,0 +1,392 @@
+/*
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+
+body
+{
+    /* Font */
+    /* ie10 的字体简写里不支持用rem做大小单位 */
+    font: normal 16px/1.618 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+
+    margin: 20px;
+    /* Text color */
+
+    color: #333;
+    /* Remove the background color to make it transparent */
+    background-color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+.cke_editable
+{
+    font-size: 16px;
+    line-height: 28px;
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+    word-wrap: break-word;
+
+    color: #3d464d;
+    /* Fix for missing scrollbars with RTL texts. (#10488) */
+}
+blockquote
+{
+    font-size: 1rem;
+
+    position: relative;
+
+    margin: 20px 0;
+    padding: 16px 24px 16px 35px;
+
+    color: #000;
+    background: #f4f4f4;
+}
+blockquote:before
+{
+    font-size: 24px;
+
+    position: absolute;
+    top: 12px;
+    left: 16px;
+
+    display: inline-block;
+
+    width: 13px;
+    height: 9px;
+
+    content: '';
+
+    background-image: url(../../../imgs/icon-svg/icon-quotation.svg);
+}
+
+blockquote:before,
+blockquote:after
+{
+    font-family: Helvetica, arial, '宋体';
+    font-size: 24px;
+
+    position: absolute;
+
+    content: '';
+
+    color: #0f6575;
+}
+
+.blockquote
+{
+    margin: 10px 0;
+}
+
+/*.cke_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}*/
+
+a
+{
+    font-size: 16px;
+
+    color: #46b;
+}
+
+ol,
+ul,
+dl
+{
+    /* IE7: reset rtl list margin. (#7334) */
+    margin-right: 0;
+    /* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+    padding: 0 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    /*font-weight: normal;*/
+    /*line-height: 1.2;*/
+}
+
+hr
+{
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+img.right
+{
+    float: right;
+
+    margin-left: 15px;
+    padding: 5px;
+
+    border: 1px solid #ccc;
+}
+
+img.left
+{
+    float: left;
+
+    margin-right: 15px;
+    padding: 5px;
+
+    border: 1px solid #ccc;
+}
+
+pre
+{
+    font-size: 10pt;
+
+    overflow-x: auto;
+    /*	white-space: pre-wrap; /* CSS 2.1 */
+    /*	word-wrap: break-word; /* IE7 */
+
+    -moz-tab-size: 4;
+         tab-size: 4;
+}
+pre,
+code
+{
+    font-family: Menlo,Monaco,Consolas,'Courier New',monospace;
+}
+pre::-webkit-scrollbar,
+code::-webkit-scrollbar
+{
+    width: 5px !important;
+    height: 5px !important;
+
+    -webkit-appearance: none;
+}
+pre::-webkit-scrollbar-thumb,
+code::-webkit-scrollbar-thumb
+{
+    height: 5px;
+
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: none;
+    -webkit-border-radius: 6px;
+    background-color: rgba(153,153,153,.9);
+    background-clip: padding-box;
+}
+pre > code
+{
+    overflow-x: auto;
+
+    border-radius: 4px;
+}
+
+.marker
+{
+    background-color: Yellow;
+}
+
+span[lang]
+{
+    font-style: italic;
+}
+
+figure
+{
+    display: inline-block;
+
+    margin: 10px 20px;
+    padding: 10px;
+
+    text-align: center;
+
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    background: rgba(0,0,0,.05);
+}
+
+figure > figcaption
+{
+    display: block; /* For IE8 */
+
+    text-align: center;
+}
+
+a > img
+{
+    margin: 1px;
+    padding: 1px;
+
+    border: none;
+    outline: 1px solid #0782c1;
+}
+
+p
+{
+    margin: 16px 0;
+
+    text-align: justify;
+    text-justify: inter-ideograph;
+    word-break: initial;
+    word-break: break-word;
+}
+
+/* ckeditor编辑器代码 */
+
+ul,
+li
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*p {
+	margin: 0;
+	margin-bottom: 16px;
+}*/
+img
+{
+    max-width: 80%;
+    height: auto;
+}
+
+h1
+{
+    font-size: 24px;
+}
+h2
+{
+    font-size: 22px;
+}
+h3
+{
+    font-size: 18px;
+}
+h4
+{
+    font-size: 16px;
+}
+h5
+{
+    font-size: 14px;
+}
+ul
+{
+    margin: 0;
+    margin-left: 30px;
+    padding: 8px 15px;
+}
+blockquote
+{
+    font-size: 16px;
+
+    position: relative;
+
+    margin: 20px 0;
+    padding: 16px 24px 16px 35px;
+
+    color: #000;
+    background: #f4f4f4;
+}
+blockquote a
+{
+    font-size: 15px;
+}
+blockquote:before
+{
+    font-size: 24px;
+
+    position: absolute;
+    top: 12px;
+    left: 16px;
+
+    display: inline-block;
+
+    width: 13px;
+    height: 9px;
+
+    content: '';
+
+    background-image: url(../../../imgs/icon-svg/icon-quotation.svg);
+}
+
+pre,
+code
+{
+    font-size: 13px;
+    line-height: 1.8em;
+
+    padding: 2px;
+
+    color: #dcdcdc;
+    border-radius: 3px;
+    background: #3f3f3f;
+}
+pre code
+{
+    line-height: 1.4;
+
+    overflow-x: auto;
+
+    padding: 10px;
+
+    word-wrap: normal;
+
+    border-radius: 4px;
+}
+a
+{
+    text-decoration: none;
+
+    color: #46b;
+    border: none;
+    outline: none;
+}
+a:hover
+{
+    color: #c00;
+}
+hr
+{
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+table
+{
+    font-size: 14px;
+
+    border-spacing: 1px;
+    border-collapse: collapse;
+
+    color: #444;
+    border: 1px solid #ccc;
+}
+table thead
+{
+    text-align: left;
+
+    background: #f8f8f8;
+}
+table th
+{
+    background: #f8f8f8;
+}
+table th,
+table td
+{
+    padding: 4px 8px;
+
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://www.oschina.net/question/2720166_2280605?sort=time -->
+<html lang="zh-CN" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=0">
+    <meta name="keywords" content="技术问答,OpenFPGAduino,高手问答,高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网">
+    <meta name="description" itemprop="description" content="OSCHINA 本期高手问答(2018 年 5 月 29 日 — 6 月 4 日)我们邀请到了李知周老师@李知周 和大家就关于使用 JavaScript 构建物联网方面的问题进行讨论。 李知周，曾在国际知名投资银行从事基于大数据与机器学习...">
+    <title>高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区</title>
+            <link rel="preload" href="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f(1).txt" as="script"><script src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/push.js"></script><script src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f.txt"></script><script src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/ca-pub-7090564139599510.js"></script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f(1).txt"></script><link rel="preload" href="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f(2).txt" as="script"><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f(2).txt"></script><script src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/share.js"></script><style>.cke{visibility:hidden;}</style><style type="text/css">.fancybox-margin{margin-right:15px;}</style><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/config.js"></script><link rel="stylesheet" href="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/share_style0_16.css"><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/skin.js"></script><link rel="stylesheet" type="text/css" href="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/editor.css"><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/zh-cn.js"></script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/styles.js"></script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/plugin.js"></script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/plugin(1).js"></script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/zh-cn(1).js"></script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/highlight.pack.js"></script></head><body class="sc sc-bgc body" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"><val data-name="g_user_login" data-value="true"></val>
+                <link type="text/css" rel="stylesheet" href="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/question-main-1827b7471bfd33fcbb49fff84ebd8cba0c50fef7.css">        <script src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/hm.js"></script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/jquery.js"></script>
+
+    <val data-name="weixinAppid" data-value="wx880def15e694b905"></val>
+    <val data-name="weixinTimestamp" data-value="1527820567541"></val>
+    <val data-name="weixinNonceStr" data-value="e13f0178-40ea-4d67-b9fe-9e284add9168"></val>
+    <val data-name="weixinSignature" data-value="14da7bbbe0963cbb3588e275c9be7e86432288e1"></val>
+    <val data-name="weixinUrl" data-value="https://www.oschina.net/question/2720166_2280605?sort=time"></val>
+                <val data-name="weixinShareTitle" data-value=""></val>
+    <val data-name="weixinShareDescription" data-value=""></val>
+    <val data-name="weixinShareImgUrl" data-value="https://www.oschina.net/img/osclogo/png/logo_4wechat.png?t=1512641765000"></val>
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute;"><defs><svg width="14" height="15" viewBox="0 0 14 15" id="ic-comment-delete"><path d="M4.702 12.134V4.868a.33.33 0 0 0-.661 0v7.266a.33.33 0 0 0 .661 0zm2.645 0V4.868a.33.33 0 0 0-.661 0v7.266a.33.33 0 0 0 .661 0zm4.96-7.596v8.917c0 .364-.296.66-.662.66H2.388a.661.661 0 0 1-.661-.66V4.538a.33.33 0 0 0-.65-.083c-.004-.002-.012 9-.012 9 0 .73.592 1.32 1.323 1.32h9.257c.73 0 1.323-.59 1.323-1.32V4.538a.33.33 0 0 0-.661 0zm1.324-2.642H9.823L8.603.677a.35.35 0 0 0-.256-.102h-2.66a.35.35 0 0 0-.255.102l-1.22 1.219H.404a.33.33 0 1 0 0 .66h3.98a.35.35 0 0 0 .261-.102l1.22-1.219H8.17l1.22 1.219a.35.35 0 0 0 .261.102h3.98a.33.33 0 0 0 0-.66zM9.992 12.134V4.868a.33.33 0 0 0-.66 0v7.266a.33.33 0 0 0 .66 0z" stroke="#5F5E5E" stroke-width=".4" fill="#5F5E5E" fill-rule="evenodd"></path></svg><svg width="16" height="15" viewBox="0 0 16 15" id="ic-comment-icon"><defs><path d="M53 5.007C53 3.9 53.895 3 54.994 3h12.012C68.107 3 69 3.901 69 5.007v7.978a2.003 2.003 0 0 1-2.01 2.008h-.72c-1.11 0-2.644.631-3.428 1.412l-.376.374c-.783.78-2.05.78-2.831 0l-.375-.374c-.78-.78-2.302-1.412-3.413-1.412H55c-1.104 0-1.999-.902-1.999-2.008V5.007z" id="ba"></path><mask id="bb" x="0" y="0" width="16" height="14.364" fill="#fff"><use xlink:href="#ba"></use></mask></defs><use mask="url(#bb)" xlink:href="#ba" transform="translate(-53 -3)" stroke-width="2" stroke="#999" fill="none" fill-rule="evenodd"></use></svg><svg width="17" height="17" viewBox="0 0 17 17" id="ic-comment-like"><path d="M15.249 5.895c-.625-.164-2.095-.162-4.244-.218.102-.47.125-.892.125-1.642 0-1.792-1.307-3.371-2.463-3.371-.817 0-1.49.667-1.5 1.487-.012 1.006-.323 2.744-2 3.625-.123.065-.475.238-.527.26l.027.023c-.263-.226-.627-.4-1-.4h-1.5c-.827 0-1.5.673-1.5 1.5v7.993a1.5 1.5 0 0 0 1.5 1.499h1.5c.595 0 1.092-.36 1.334-.863a.164.164 0 0 0 .023.006l.12.031.023.006c.288.071.842.204 2.027.476.254.058 1.596.344 2.987.344h2.733c.833 0 1.45-.31 1.79-.963.333-.581 1.964-3.692 1.963-8.077 0-.63-.437-1.436-1.418-1.716zM4.167 15.152a.5.5 0 0 1-.5.5h-1.5a.5.5 0 0 1-.5-.5V7.158a.5.5 0 0 1 .5-.499h1.5a.5.5 0 0 1 .5.5v7.993z" fill="#4AAB47" fill-rule="evenodd"></path></svg><svg width="18" height="16" viewBox="0 0 18 16" id="ic-comment-report"><defs><rect id="da" x="7.2" y="4" width="1.5" height="5" rx=".75"></rect><mask id="db" x="0" y="0" width="1.5" height="5" fill="#fff"><use xlink:href="#da"></use></mask></defs><g transform="translate(1 1)" fill="none" fill-rule="evenodd"><path d="M6.944.719c.551-.956 1.442-.962 1.997 0l6.706 11.624c.551.956.111 1.73-.998 1.73H1.236c-1.103 0-1.553-.768-.998-1.73L6.944.72z" stroke="#979797"></path><use stroke="#979797" mask="url(#db)" stroke-width="2" fill="#D8D8D8" xlink:href="#da"></use><circle fill="#979797" cx="8" cy="11" r="1"></circle></g></svg><svg width="20" height="20" viewBox="0 0 20 20" id="ic-comment-smile"><path d="M9.996 19.979C4.495 19.979 0 15.497 0 9.996 0 4.482 4.482 0 9.996 0c5.515 0 9.996 4.482 9.996 9.996 0 5.501-4.481 9.983-9.996 9.983zm0-18.731c-4.817 0-8.748 3.918-8.748 8.748 0 4.817 3.918 8.748 8.748 8.748 4.817 0 8.748-3.918 8.748-8.748a8.75 8.75 0 0 0-8.748-8.748zm0 14.679a6.69 6.69 0 0 1-5.112-2.362.633.633 0 0 1 .067-.885c.255-.229.658-.188.886.067a5.47 5.47 0 0 0 8.346 0 .606.606 0 0 1 .872-.067.606.606 0 0 1 .067.872 6.752 6.752 0 0 1-5.126 2.375zm-3.18-5.985c-.55 0-1.006-.456-1.006-1.006V7.568c0-.55.456-1.007 1.006-1.007s1.006.456 1.006 1.007v1.368c0 .55-.456 1.006-1.006 1.006zm6.36 0c-.55 0-1.006-.456-1.006-1.006V7.568c0-.55.456-1.007 1.006-1.007s1.006.456 1.006 1.007v1.368c0 .55-.442 1.006-1.006 1.006z" fill="#888" fill-rule="evenodd"></path></svg><svg width="19" height="19" viewBox="0 0 19 19" id="ic-comment-software"><g fill="#888" fill-rule="evenodd"><path d="M3.187 6.519h3.42v-3.42h-3.42zM7.746 6.519h3.42v-3.42h-3.42zM12.306 6.519h3.42v-3.42h-3.42zM3.187 11.078h3.42v-3.42h-3.42zM7.746 11.078h3.42v-3.42h-3.42zM3.187 15.637h3.42v-3.42h-3.42z"></path><path d="M13.5 15.637h2.225V7.659h-3.42v4.558H7.747v3.42H13.5"></path><path d="M17.18.019H1.73C.737.019.004.823.004 1.815V17.2c0 .992.804 1.796 1.796 1.796h15.381c.992 0 1.796-.804 1.796-1.796V1.709c0-.992-.804-1.69-1.796-1.69zM2.117 16.884h14.748V2.131H2.116v14.753z"></path></g></svg><svg width="17" height="17" viewBox="0 0 17 17" id="ic-comment-unlike"><path d="M15.249 5.895c-.625-.164-2.095-.162-4.244-.218.102-.47.125-.892.125-1.642 0-1.792-1.307-3.371-2.463-3.371-.817 0-1.49.667-1.5 1.487-.012 1.006-.323 2.744-2 3.625-.123.065-.475.238-.527.26l.027.023c-.263-.226-.627-.4-1-.4h-1.5c-.827 0-1.5.673-1.5 1.5v7.993a1.5 1.5 0 0 0 1.5 1.499h1.5c.595 0 1.092-.36 1.334-.863a.164.164 0 0 0 .023.006l.12.031.023.006c.288.071.842.204 2.027.476.254.058 1.596.344 2.987.344h2.733c.833 0 1.45-.31 1.79-.963.333-.581 1.964-3.692 1.963-8.077 0-.63-.437-1.436-1.418-1.716zM4.167 15.152a.5.5 0 0 1-.5.5h-1.5a.5.5 0 0 1-.5-.5V7.158a.5.5 0 0 1 .5-.499h1.5a.5.5 0 0 1 .5.5v7.993zm11.488-7.227c-.208 5.021-1.831 7.29-1.831 7.29-.151.273-.395.437-.91.437H10.18c-1.374 0-2.736-.312-2.77-.32-2.078-.477-2.187-.515-2.318-.552l.074-7.34c0-.76.017-.568 0-.558 2.284-.945 2.98-3.018 3-4.72.003-.239.187-.5.5-.5.529 0 1.463 1.061 1.463 2.373 0 1.185-.048 1.39-.463 2.624 5 0 4.965.072 5.406.187a.766.766 0 0 1 .594.765c0 .171-.005.147-.012.314z" fill="#999" fill-rule="evenodd"></path></svg><svg width="19" height="19" viewBox="0 0 19 19" id="ic_back_top"><path d="M9.351 3.447L.694 11.815h4.913l-.043 6.853h7.553v-6.874l5.042-.065-8.808-8.282zM.035.035h18.633v2.747H.035V.035z" fill="#9C9C9C" fill-rule="evenodd"></path></svg></defs></svg>    <svg width="0" height="0" style="position:absolute"><defs><svg width="15" height="15" viewBox="0 0 15 15" id="ic_search"><path d="M10.688 10.078a6 6 0 1 0-.943.943l3.784 3.784a.665.665 0 0 0 .942 0 .667.667 0 0 0 0-.943l-3.783-3.784zM6 11a4.667 4.667 0 1 1 0-9.333A4.667 4.667 0 0 1 6 11z" fill="#FFF" fill-rule="evenodd" fill-opacity=".5"></path></svg><svg width="24" height="26" viewBox="0 0 24 26" id="question-accepted"><path d="M9.5 18.5s6-15 14-18.5v9.5s-8 6-13.5 16L0 16l6-4.5 3.5 7z" fill="#3AAB4F" fill-rule="evenodd"></path></svg><svg width="18" height="18" viewBox="0 0 18 18" id="question-ask"><path d="M9.706 13.956A.498.498 0 0 1 9 13.5c0-.073.016-.143.044-.206a1 1 0 1 1 .662.662zM9 18A9 9 0 1 0 9 0a9 9 0 0 0 0 18zm0-1A8 8 0 1 0 9 1a8 8 0 0 0 0 16zm-.6-6.627v-.268c0-1.026.75-1.81 1.412-2.502.486-.509.988-1.033.988-1.452 0-1.046-.808-1.896-1.8-1.896-1.01 0-1.8.814-1.8 1.854a.614.614 0 0 1-.6.627.614.614 0 0 1-.6-.627C6 4.395 7.346 3 9 3s3 1.414 3 3.151c0 .94-.681 1.651-1.34 2.34-.521.544-1.06 1.107-1.06 1.614v.267c0 .346-.269.628-.6.628a.614.614 0 0 1-.6-.627z" fill="#4EAA4C" fill-rule="evenodd"></path></svg><svg width="18" height="16" viewBox="0 0 18 16" id="question-follow"><path d="M15.682 2.318A4.472 4.472 0 0 0 12.5 1c-1.202 0-2.165.432-3.015 1.282h-.002v.001L9 2.891l-.483-.571-.002-.002C7.665 1.468 6.702 1 5.5 1a4.471 4.471 0 0 0-3.182 1.318A4.47 4.47 0 0 0 1 5.5c0 1.202.467 2.33 1.316 3.18l5.974 6.024a1 1 0 0 0 1.42 0l5.973-6.023A4.471 4.471 0 0 0 17 5.5a4.471 4.471 0 0 0-1.318-3.182z" stroke="#FFF" fill="none" fill-rule="evenodd"></path></svg><svg width="135" height="31" viewBox="0 0 135 31" id="question-logo"><defs><lineargradient x1="100%" y1="100%" x2="0%" y2="0%" id="ea"><stop stop-color="#4AC58C" offset="0%"></stop><stop stop-color="#24A659" offset="100%"></stop></lineargradient></defs><g transform="translate(-3)" fill="none" fill-rule="evenodd"><path d="M5.727 6.802c-.579 0-.98-.134-1.247-.357-.223-.222-.357-.668-.357-1.247 0-.535.134-.89.357-1.114.223-.222.668-.356 1.247-.356h20.804c.623 0 1.024.134 1.247.356.223.223.312.624.312 1.114 0 .58-.09.98-.312 1.247-.223.223-.624.357-1.247.357h-3.119v7.395h4.633c.624 0 1.025.089 1.248.311.222.223.312.535.312 1.025 0 .535-.09.936-.312 1.203-.223.267-.624.4-1.248.4h-4.633v9.623c0 .624-.178 1.025-.49 1.247-.356.223-.712.312-1.202.312s-.891-.134-1.203-.356c-.356-.223-.49-.668-.49-1.248v-9.622h-7.484c-.09 1.337-.267 2.54-.58 3.609a10.923 10.923 0 0 1-1.157 2.85c-.49.847-1.07 1.649-1.782 2.317a22.527 22.527 0 0 1-2.406 2.094c-.534.4-1.024.579-1.514.534-.49-.044-.847-.267-1.114-.757-.312-.49-.446-.891-.312-1.292.134-.4.445-.802.891-1.158a26.039 26.039 0 0 0 1.915-1.56c.535-.49.98-1.068 1.381-1.692a9.345 9.345 0 0 0 .891-2.138c.223-.802.357-1.738.446-2.807h-4.5c-.623 0-1.024-.133-1.247-.4-.222-.268-.312-.669-.312-1.204 0-.49.09-.801.312-1.024.223-.223.624-.312 1.248-.312H9.29V6.757H5.727v.045zm6.816 7.395h7.395V6.802h-7.395v7.395zM39.432 14.592c-.356.356-.757.49-1.158.445-.4-.044-.846-.312-1.38-.802-.223-.133-.58-.4-.98-.757-.402-.356-.847-.668-1.293-1.025-.4-.4-.668-.757-.757-1.113-.089-.357.045-.758.401-1.292.624-.802 1.425-.802 2.45-.09.356.312.802.624 1.247.98.49.357.891.669 1.203.98.401.402.668.803.802 1.248.178.49 0 .936-.535 1.426zm.669 4.9a64.518 64.518 0 0 1-1.159 4.054c-.4 1.291-.935 2.539-1.559 3.786-.267.535-.623.891-1.113 1.025-.49.133-.936.089-1.337-.134-.445-.267-.713-.579-.802-.98-.089-.4.045-.98.446-1.648.534-.98.98-2.05 1.336-3.208.357-1.158.713-2.405 1.07-3.742.133-.623.356-1.069.668-1.291.311-.223.712-.312 1.291-.179.535.09.936.312 1.114.669.223.311.267.89.045 1.648zm.49-11.36c-.357.357-.758.49-1.114.446-.4-.045-.846-.312-1.381-.758-.356-.311-.757-.668-1.203-1.024-.445-.357-.802-.668-1.069-.891-.445-.357-.713-.713-.757-1.07-.045-.356.044-.757.4-1.247.313-.4.669-.623 1.114-.668.446-.044.891.134 1.337.49.356.267.624.49.89.668.268.223.446.401.624.535.179.178.357.312.49.445.134.134.312.268.49.446.401.4.669.802.802 1.247.134.401-.044.847-.534 1.337l-.09.044zm8.063-.044c-.936 0-1.56.222-1.916.623-.356.446-.534 1.114-.534 2.05v6.058c0 1.782.802 2.673 2.45 2.673h2.494v5.212c0 .267-.044.445-.178.534-.133.09-.49.045-1.069-.133-.624-.178-1.069-.223-1.336-.09-.268.134-.446.446-.58.892-.133.534-.133.98.09 1.291.178.357.623.58 1.292.669.89.178 1.648.267 2.182.267.535 0 1.025-.09 1.381-.356.357-.223.58-.624.713-1.114.134-.49.223-1.158.223-2.005v-5.212h2.494c.936 0 1.604-.178 1.96-.579.401-.4.58-1.069.58-2.094v-6.058c0-.936-.179-1.648-.535-2.05-.356-.445-.98-.623-1.87-.623h-2.941c.09-.134.134-.223.134-.267.044-.045.044-.09.089-.09.312-.667.312-1.202.044-1.558h4.811c.58 0 .936-.09 1.159-.312.178-.223.311-.58.311-1.07 0-.49-.089-.846-.267-1.113-.178-.267-.579-.356-1.158-.356H44.422c-.936 0-1.604.222-2.005.668-.4.445-.624 1.203-.624 2.227v7.039c0 1.648 0 3.073-.044 4.232-.045 1.202-.09 2.227-.178 3.162a16.9 16.9 0 0 1-.401 2.406c-.178.713-.401 1.336-.668 1.96-.134.312-.268.624-.357.847-.089.267-.133.49-.133.668 0 .222.044.4.178.579.089.178.267.356.49.49.4.267.802.356 1.158.267.356-.044.713-.4 1.025-1.069a15.54 15.54 0 0 0 .89-2.54c.223-.89.446-1.915.58-2.984.133-1.114.222-2.272.267-3.608.045-1.292.09-2.762.09-4.321V6.84c0-.311.044-.49.133-.579a.404.404 0 0 1 .312-.133h6.325c-.044.089-.089.133-.089.222a.34.34 0 0 0-.089.223 11.556 11.556 0 0 1-.846 1.47l-1.782.045zm.4 14.121c.223-.579.313-1.024.268-1.38-.045-.357-.312-.58-.802-.803-.445-.178-.802-.222-1.069-.044-.267.178-.535.49-.713.98-.178.49-.356.935-.49 1.292a7.247 7.247 0 0 1-.49 1.024 27.49 27.49 0 0 1-.579.98c-.223.357-.445.713-.713 1.159-.312.49-.49.935-.445 1.291.044.357.178.669.49.936.4.312.757.4 1.114.267.356-.133.668-.4.935-.802.49-.801.98-1.648 1.426-2.45.4-.802.757-1.603 1.069-2.45zm6.95-9.711h-6.95v-1.292c0-.223.045-.312.09-.356a.478.478 0 0 1 .267-.09h6.148c.267 0 .4.134.4.446l.045 1.292zm0 3.875c0 .357-.134.535-.4.535h-6.148c-.268 0-.401-.178-.401-.535v-1.336h6.95v1.336zm3.475 8.598a23.753 23.753 0 0 0-.624-1.158c-.178-.312-.4-.668-.579-.98-.178-.312-.4-.624-.624-.98-.222-.312-.49-.713-.757-1.114-.312-.445-.668-.668-1.07-.713-.355-.044-.712.09-.98.401-.177.178-.311.357-.356.58-.044.178-.089.4-.044.579 0 .178.089.356.134.534.089.178.178.312.267.49.223.312.445.624.624.891.178.267.356.58.579.891.178.312.356.624.579.98.222.356.4.713.623 1.158.268.535.535.847.802.98.268.134.624.09 1.025-.089.49-.223.713-.534.757-.935.09-.49-.044-.98-.356-1.515z" fill="#4B4B4B"></path><rect fill="url(#ea)" x="67" width="70.32" height="31" rx="3"></rect><path d="M82.488 5.424c.225 0 .633.095 1.222.286.59.19 1.023.477 1.3.858.277.381.416.85.416 1.404 0 .607-.2.91-.598.91-.243 0-.494-.121-.754-.364s-.641-.737-1.144-1.482c-.503-.745-.754-1.2-.754-1.365 0-.165.104-.247.312-.247zm14.014 5.59c0 1.473.065 3.514.195 6.123.13 2.609.195 4.069.195 4.381 0 1.317-.169 2.383-.507 3.198-.338.815-.646 1.222-.923 1.222s-.52-.182-.728-.546c-.433-.85-1.17-1.725-2.21-2.626-.208-.173-.312-.303-.312-.39 0-.087.052-.13.156-.13.104 0 .386.052.845.156.46.104.867.156 1.222.156s.576-.178.663-.533c.087-.355.13-1.326.13-2.912 0-1.586-.03-3.289-.091-5.109-.06-1.82-.134-3.155-.221-4.004-.087-.85-.182-1.434-.286-1.755-.104-.32-.204-.52-.299-.598-.095-.078-.277-.117-.546-.117s-.88.07-1.833.208c-.953.139-1.599.256-1.937.351a4.324 4.324 0 0 1-1.17.143c-.442 0-.858-.1-1.248-.299-.39-.2-.585-.377-.585-.533 0-.156.243-.243.728-.26a31.988 31.988 0 0 0 3.588-.377c1.248-.2 2.05-.386 2.405-.559.355-.173.641-.26.858-.26.217 0 .698.19 1.443.572.745.381 1.118.693 1.118.936 0 .243-.139.59-.416 1.04-.156.26-.234 1.1-.234 2.522zm-14.196-.572c0 .139-.026.32-.078.546-.087.347-.139 1.395-.156 3.146-.052 4.732-.2 7.7-.442 8.905-.243 1.205-.529 1.807-.858 1.807-.225 0-.425-.264-.598-.793s-.26-.975-.26-1.339.07-.693.208-.988c.139-.295.282-1.062.429-2.301.147-1.24.221-2.795.221-4.667 0-1.872-.022-3.111-.065-3.718-.043-.607-.139-1.057-.286-1.352-.147-.295-.221-.529-.221-.702 0-.173.104-.26.312-.26.208 0 .559.173 1.053.52.494.347.741.745.741 1.196zm3.146 2.392A14.97 14.97 0 0 0 88 12.561c.85-.165 1.426-.355 1.729-.572.303-.217.568-.325.793-.325.225 0 .659.173 1.3.52.641.347.962.641.962.884s-.234.529-.702.858c-.139.104-.381.46-.728 1.066-.347.607-.52.992-.52 1.157 0 .165.087.29.26.377.173.087.26.234.26.442s-.065.36-.195.455c-.13.095-.754.195-1.872.299-1.118.104-2.084.139-2.899.104-.017.659-.13.988-.338.988-.208 0-.386-.19-.533-.572a4.227 4.227 0 0 1-.273-1.144c-.208-1.803-.52-3.068-.936-3.796-.139-.243-.208-.438-.208-.585 0-.147.108-.221.325-.221.217 0 .559.113 1.027.338zm.936 4.134c1.075-.121 1.816-.238 2.223-.351.407-.113.68-.277.819-.494.139-.217.264-.58.377-1.092.113-.511.169-.919.169-1.222 0-.303-.039-.49-.117-.559-.078-.07-.221-.087-.429-.052-1.543.208-2.678.338-3.406.39.052.607.173 1.733.364 3.38zm31.236-10.712c.555-.017 1.291-.173 2.21-.468.572-.156 1.036-.234 1.391-.234s.659.078.91.234c.251.156.377.312.377.468 0 .156-.13.29-.39.403-.26.113-.741.225-1.443.338-.702.113-1.296.169-1.781.169-.485 0-1.04-.139-1.664-.416-.537.693-1.222 1.4-2.054 2.119-.832.72-1.378 1.079-1.638 1.079-.121 0-.182-.056-.182-.169 0-.113.078-.264.234-.455.85-1.023 1.53-1.928 2.041-2.717.511-.789.724-1.478.637-2.067a2.15 2.15 0 0 1-.026-.286c0-.277.139-.416.416-.416.277 0 .654.1 1.131.299.477.2.715.438.715.715a.518.518 0 0 1-.13.338l-.754 1.066zm-8.06.858c.52-.035 1.265-.208 2.236-.52.485-.139.85-.208 1.092-.208.243 0 .46.06.65.182.19.121.286.256.286.403 0 .147-.07.273-.208.377-.139.104-.537.23-1.196.377a8.484 8.484 0 0 1-1.846.221c-.572 0-1.04-.06-1.404-.182-.797 1.248-1.664 2.27-2.6 3.068-.936.797-1.543 1.196-1.82 1.196-.121 0-.182-.06-.182-.182 0-.121.087-.269.26-.442 1.04-1.04 1.876-2.123 2.509-3.25.633-1.127.949-1.993.949-2.6a.941.941 0 0 0-.065-.364.708.708 0 0 1-.065-.26c0-.26.173-.39.52-.39.347 0 .745.07 1.196.208.45.139.676.33.676.572 0 .173-.33.771-.988 1.794zm9.724 2.678c0 .225-.06.438-.182.637a.576.576 0 0 1-.52.299c-.225 0-.46-.139-.702-.416a27.784 27.784 0 0 1-.819-.988c-.303-.381-.455-.654-.455-.819 0-.165.165-.247.494-.247.659 0 1.187.152 1.586.455.399.303.598.663.598 1.079zm-10.374-.702c.728 0 1.283.1 1.664.299.381.2.572.542.572 1.027 0 .485-.173.728-.52.728-.277 0-.702-.264-1.274-.793-.572-.529-.858-.871-.858-1.027 0-.156.139-.234.416-.234zm4.862 2.912c2.132 1.75 4.008 3.003 5.629 3.757 1.62.754 3.54 1.365 5.759 1.833.676.156 1.014.312 1.014.468 0 .104-.113.195-.338.273-.225.078-.819.2-1.781.364-.962.165-1.703.247-2.223.247-.52 0-.966-.091-1.339-.273-.373-.182-1.395-.94-3.068-2.275s-3.055-2.6-4.147-3.796c-1.075 1.387-1.95 2.457-2.626 3.211-.676.754-1.538 1.504-2.587 2.249a16.04 16.04 0 0 1-3.185 1.781c-1.075.442-1.725.663-1.95.663-.225 0-.338-.056-.338-.169 0-.113.095-.221.286-.325 1.49-.797 2.981-1.798 4.472-3.003 1.49-1.205 2.63-2.327 3.419-3.367.789-1.04 1.209-1.872 1.261-2.496.035-.416.182-.624.442-.624s.585.117.975.351c.39.234.585.425.585.572 0 .147-.087.334-.26.559zm2.522 4.914c0 .087-.06.178-.182.273-.121.095-.758.269-1.911.52s-1.95.377-2.392.377c-.442 0-.85-.074-1.222-.221-.373-.147-.559-.277-.559-.39 0-.113.065-.19.195-.234.13-.043.559-.134 1.287-.273.728-.139 1.274-.269 1.638-.39.728-.26 1.335-.39 1.82-.39.485 0 .828.078 1.027.234.2.156.299.32.299.494zm-6.578 3.744c1.11-.07 2.375-.225 3.796-.468 1.421-.243 2.206-.407 2.353-.494a.981.981 0 0 1 .507-.13c.45 0 .992.195 1.625.585.633.39.949.758.949 1.105a.51.51 0 0 1-.234.429c-.156.113-.403.351-.741.715-.338.364-.507.685-.507.962 0 .277.06.481.182.611.121.13.182.256.182.377 0 .243-.217.373-.65.39-2.41.121-4.697.295-6.864.52-.104.381-.251.572-.442.572-.19 0-.36-.108-.507-.325-.147-.217-.256-.524-.325-.923-.33-1.82-.585-2.908-.767-3.263-.182-.355-.273-.611-.273-.767 0-.156.126-.234.377-.234s.698.113 1.339.338zm.624 3.692l2.99-.39a76.492 76.492 0 0 0 1.911-.247.72.72 0 0 0 .403-.234c.121-.13.243-.438.364-.923.121-.485.182-.897.182-1.235 0-.338-.143-.507-.429-.507-.286 0-2.188.225-5.707.676.139 1.283.234 2.236.286 2.86z" fill="#FFF"></path></g></svg><svg width="16" height="15" viewBox="0 0 16 15" id="question-msg"><defs><path d="M26 13.786c0 3.747-3.582 6.785-8 6.785a9.363 9.363 0 0 1-2.178-.254S14.437 22.01 12.182 22c1.091-1.52 1.09-2.74 1.09-2.74C11.287 18.025 10 16.033 10 13.786 10 10.038 13.581 7 18 7c4.418 0 8 3.038 8 6.786z" id="fa"></path><mask id="fb" x="0" y="0" width="16" height="15" fill="#fff"><use xlink:href="#fa"></use></mask></defs><use mask="url(#fb)" xlink:href="#fa" transform="translate(-10 -7)" stroke="#49AC4F" stroke-width="2.207" fill="none" fill-rule="evenodd"></use></svg><svg width="14" height="14" viewBox="0 0 14 14" id="question-remove"><g fill="none" fill-rule="evenodd"><circle fill="#C8C8C8" cx="7" cy="7" r="7"></circle><path d="M7.178 6.118l-1.9-1.9a.75.75 0 0 0-1.054.006.744.744 0 0 0-.006 1.055l1.9 1.9-1.9 1.9a.75.75 0 0 0 .006 1.054.744.744 0 0 0 1.055.006l1.9-1.9 1.9 1.9a.75.75 0 0 0 1.054-.006.744.744 0 0 0 .006-1.055l-1.9-1.9 1.9-1.9a.75.75 0 0 0-.006-1.054.744.744 0 0 0-1.055-.006l-1.9 1.9z" fill="#FFF"></path></g></svg><svg width="20" height="20" viewBox="0 0 20 20" id="question-staron"><path d="M15.262 19.913c-.167 0-.501 0-.668-.174l-4.676-3.304-4.676 3.304c-.5.348-1.002.348-1.503 0-.5-.348-.668-.87-.5-1.391l1.67-5.74-4.51-3.651a1.391 1.391 0 0 1-.333-1.392 1.26 1.26 0 0 1 1.168-.87l5.511-.347L8.75.783c.334-1.044 2.004-1.044 2.338 0l2.004 5.565 5.677.174a1.26 1.26 0 0 1 1.17.87c.166.521 0 1.043-.502 1.39l-4.508 3.827 1.503 5.739c.167.522 0 1.043-.501 1.391-.167 0-.334.174-.668.174z" fill="#F5A622" fill-rule="evenodd"></path></svg><svg width="24" height="26" viewBox="0 0 24 26" id="question-unaccept"><path d="M9.5 18.5s6-15 14-18.5v9.5s-8 6-13.5 16L0 16l6-4.5 3.5 7z" fill="#EF5039" fill-rule="evenodd"></path></svg><svg width="16" height="9" viewBox="0 0 16 9" id="question-votedown"><path d="M-.045.43l7.373 7.374a.808.808 0 0 0 1.143 0L15.844.43H-.045" fill="#AAA" fill-rule="evenodd"></path></svg><svg width="16" height="9" viewBox="0 0 16 9" id="question-votedownon"><path d="M-.045.43l7.373 7.374a.808.808 0 0 0 1.143 0L15.844.43H-.045" fill="#EF5039" fill-rule="evenodd"></path></svg><svg width="16" height="9" viewBox="0 0 16 9" id="question-voteup"><path d="M-.045 8.368L7.328.995a.808.808 0 0 1 1.143 0l7.373 7.373H-.045" fill="#AAA" fill-rule="evenodd"></path></svg><svg width="16" height="9" viewBox="0 0 16 9" id="question-voteupon"><path d="M-.045 8.368L7.328.995a.808.808 0 0 1 1.143 0l7.373 7.373H-.045" fill="#49AB4F" fill-rule="evenodd"></path></svg><svg width="20" height="20" viewBox="0 0 20 20" id="question_unstar"><path d="M15.262 19.913c-.167 0-.501 0-.668-.174l-4.676-3.304-4.676 3.304c-.5.348-1.002.348-1.503 0-.5-.348-.668-.87-.5-1.391l1.67-5.74-4.51-3.651a1.391 1.391 0 0 1-.333-1.392 1.26 1.26 0 0 1 1.168-.87l5.511-.347L8.75.783c.334-1.044 2.004-1.044 2.338 0l2.004 5.565 5.677.174a1.26 1.26 0 0 1 1.17.87c.166.521 0 1.043-.502 1.39l-4.508 3.827 1.503 5.739c.167.522 0 1.043-.501 1.391-.167 0-.334.174-.668.174z" fill="#E0DFDD" fill-rule="evenodd"></path></svg></defs></svg>    <x-foo-define data-define="www_question_detail"></x-foo-define>
+            <val data-name="g_user_login" data-value="true"></val>
+        <val data-name="user_code" data-value="xGXD0NT2TtTmicV71HQwUw0EjHpsJn59zeEHbYBo"></val>
+        <val data-name="g_user_id" data-value="2330392"></val>
+        <val data-name="polling_msg_tips_url" data-value="/action/msg/tips"></val>
+<val data-name="g_msg_reply_count" data-value="0"></val>
+<val data-name="g_msg_reply_tpl" data-value="{{repliesCount}}条新评论，&lt;a href=&#39;https://my.oschina.net/u/2330392/home?type=reply&#39;&gt;查看评论»&lt;/a&gt;&lt;br/&gt;"></val>
+<val data-name="g_msg_fans_count" data-value="4"></val>
+<val data-name="g_msg_fans_tpl" data-value="{{fansCount}}位新粉丝，&lt;a href=&#39;https://my.oschina.net/u/2330392/fans?s=time&#39;&gt;查看粉丝»&lt;/a&gt;&lt;br/&gt;"></val>
+<val data-name="g_msg_ref_count" data-value="0"></val>
+<val data-name="g_msg_ref_tpl" data-value="{{refMeCount}}条提到我，&lt;a href=&#39;https://my.oschina.net/u/2330392/home?type=atme&#39;&gt;@提到我»&lt;/a&gt;&lt;br/&gt;"></val>
+<val data-name="g_msg_count" data-value="0"></val>
+<val data-name="g_msg_tpl" data-value="{{privateMsgCount}}条新私信，&lt;a href=&#39;https://my.oschina.net/u/2330392/admin/inbox&#39;&gt;查看私信»&lt;/a&gt;&lt;br/&gt;"></val>
+<val data-name="g_msg_total_count" data-value="4"></val>
+<val data-name="g_msg_tip_text" data-value="&lt;div id=&#39;MsgTip&#39;&gt;4位新粉丝，&lt;a href=&#39;https://my.oschina.net/u/2330392/fans?s=time&#39;&gt;查看粉丝»&lt;/a&gt;&lt;br/&gt;&lt;/div&gt;"></val>
+        <val data-name="question_id" data-value="2280605"></val>
+    <val data-name="question_url" data-value="https://www.oschina.net/question/2720166_2280605"></val>
+    <style>
+.header-navbar .top-banner .menus .mayun {
+  color: #F8E71C;
+  position: relative;
+}
+.header-navbar .top-banner .menus #icon_mayun {
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    top: 10px;
+    width: 36px;
+    margin-left: 4px;
+    padding: 0 3px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: #c71d24;
+}
+.header-navbar .top-banner .menus #icon_mayun:after {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    content: '';
+    opacity: .6;
+    background: url(/dist/www/imgs/flash.gif?t=1505734150000) center no-repeat;
+    background-size: contain;
+}
+</style>
+<header class="header-navbar">
+    <div class="box top-banner">
+        <div class="box vertical box-aw">
+            <a href="https://www.oschina.net/" class="osc-logo"></a>
+            <div class="menus">
+                <a class="menu-item" href="https://www.oschina.net/">首页</a>
+                <div class="menu-item menu-drop">
+                    <a href="https://www.oschina.net/project" class="project">
+                        开源项目
+                        <i class="icon-svg icon-arr-down-white"></i>
+                    </a>
+                    <div class="menu-drop-down">
+                        <ul class="drop-list">
+                            <li><a href="https://www.oschina.net/project/zh">国产开源项目</a></li>
+                            <li><a href="https://www.oschina.net/project/tags">项目分类</a></li>
+                            <li><a href="https://www.oschina.net/project/list?sort=time">最新收录项目</a></li>
+                            <li class="split"></li>
+                            <li><a href="https://www.oschina.net/project/lang/19/java">Java 开源软件</a></li>
+                            <li><a href="https://www.oschina.net/project/lang/194/csharp">C# 开源软件</a></li>
+                            <li><a href="https://www.oschina.net/project/lang/22/php">PHP 开源软件</a></li>
+                            <li><a href="https://www.oschina.net/project/lang/21/c">C/C++ 开源软件</a></li>
+                            <li><a href="https://www.oschina.net/project/lang/26/ruby">Ruby 开源软件</a></li>
+                            <li><a href="https://www.oschina.net/project/lang/25/python">Python 开源软件</a></li>
+                            <li><a href="https://www.oschina.net/project/lang/358/go">Go开源软件</a></li>
+                            <li><a href="https://www.oschina.net/project/lang/28/javascript">JS开源软件</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box menu-item menu-drop">
+                    <a href="https://www.oschina.net/question" class="question">
+                        问答
+                        <i class="icon-svg icon-arr-down-white"></i>
+                    </a>
+                    <div class="menu-drop-down">
+                        <ul class="drop-list">
+                            <li><a href="https://www.oschina.net/question?catalog=1"> 技术问答</a></li>
+                            <li><a href="https://www.oschina.net/question?catalog=2"> 技术分享</a></li>
+                            <li><a href="https://www.oschina.net/question?catalog=3"> IT大杂烩</a></li>
+                            <li><a href="https://www.oschina.net/question?catalog=100"> 职业生涯</a></li>
+                            <li><a href="https://www.oschina.net/question?catalog=4"> 站务/建议</a></li>
+                            <li><a href="https://www.oschina.net/alipay"> 支付宝专区</a></li>
+                            <li><a href="https://www.oschina.net/mopaas"> MoPaaS专区</a></li>
+                            <li><a href="https://www.oschina.net/hardware"> 开源硬件专区</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://www.oschina.net/tweets" class="menu-item tweets">动弹</a>
+                <a href="https://www.oschina.net/blog" class="menu-item blog">博客</a>
+                <a href="https://www.oschina.net/translate" class="menu-item tran">翻译</a>
+                <a href="https://www.oschina.net/news" class="menu-item news">资讯</a>
+                <div class="menu-item menu-drop">
+                    <a href="https://www.oschina.net/android" class="mobile">
+                        专题
+                        <i class="icon-svg icon-arr-down-white"></i>
+                    </a>
+                    <div class="menu-drop-down">
+                        <ul class="drop-list drop-list-inline">
+                            <li><a href="https://www.oschina.net/event/ych" class="font-red">源创会</a></li>
+                            <li><a href="https://www.oschina.net/question/tag/%E9%AB%98%E6%89%8B%E9%97%AE%E7%AD%94">高手问答</a> <a href="https://www.oschina.net/question/tag/%E5%BC%80%E6%BA%90%E8%AE%BF%E8%B0%88">访谈</a></li>
+                            <li><a href="https://my.oschina.net/editorial-story/blog">周刊</a> <a href="https://my.oschina.net/xxiaobian/blog">乱弹</a></li>
+                            <li><a href="https://www.oschina.net/company">公司开源导航页</a></li>
+                        </ul>
+                        <div class="split"></div>
+                        <ul class="drop-list mobile">
+                            <li class="android"><a href="https://www.oschina.net/android">Android开发专区</a></li>
+                            <li class="ios"><a href="https://www.oschina.net/ios/home">iOS开发专区</a></li>
+                            <li class="ios"><a href="https://www.oschina.net/ios/codingList">iOS代码库</a></li>
+                            <li class="wp7"><a href="https://www.oschina.net/wp">Windows Phone</a></li>
+                            <li class="wp7"><a href="https://www.oschina.net/ibm">IBM开发专区</a></li>
+                            <!--<li class="wp7"><a href="http://hsbn.oschina.net/" target="_blank">高安全区块链社区</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://www.oschina.net/event" class="menu-item event">活动</a>
+                <a href="https://job.oschina.net/" class="menu-item event">招聘</a>
+                <a href="https://zb.oschina.net/?from=osc" target="_blank" class="menu-item event">众包</a>
+                <a href="https://gitee.com/?from=osc-index" target="_blank" class="menu-item event mayun">码云<span id="icon_mayun">特惠</span></a>
+            </div>
+
+        </div>
+        <div class="box-fr user-bar">
+            <div class="box user-info">
+                                                    <span class="name">李知周</span>，您好&nbsp;
+                    <div id="site_header_tooltip"><div class="tooltip-box personal-tips"><div id="MsgTip">4位新粉丝，<a href="https://my.oschina.net/u/2330392/fans?s=time">查看粉丝»</a><br></div></div></div>
+                    <div class="user-menu split menu-drop user-menu">
+                        <a id="MySpace" href="https://my.oschina.net/u/2330392" data-tooltips-model="my_space">
+                            我的空间
+                            <i class="icon-svg icon-arr-down-white"></i>
+                        </a>
+                        <div class="menu-drop-down">
+                            <ul class="drop-list myspace">
+                                <li class="msg"><a href="https://www.oschina.net/home/go?page=admin%2Finbox">我的私信</a></li>
+                                <li class="discuss"><a href="https://my.oschina.net/u/2330392/home?type=bbs">我的讨论记录</a></li>
+                                <li class="code"><a href="https://www.oschina.net/code/list_by_user?id=2330392">我分享的代码</a></li>
+                                <li class="blog"><a href="https://www.oschina.net/home/go?page=blog">我的博客</a></li>
+                                <li class="friends"><a href="https://www.oschina.net/home/go?page=fellow">我关注的人</a></li>
+                                <li class="favorites"><a href="https://www.oschina.net/home/go?page=favorites">我的收藏夹</a></li>
+                                <li class="profile"><a href="https://www.oschina.net/home/go?page=admin%2Fprofile">个人资料修改</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="user-menu split sm-hide" href="https://www.oschina.net/home/go?page=admin%2Fnew-project">添加软件</a>
+                    <a class="user-menu split sm-hide" href="https://www.oschina.net/home/go?page=admin%2Fnew-release">投递新闻</a>
+                    <a href="https://www.oschina.net/action/user/logout?session=bdfa581489541022128&amp;goto_page=https%3A%2F%2Fwww.oschina.net%2Fquestion%2F2720166_2280605">退出</a>
+                            </div>
+        </div>
+    </div>
+</header>
+<!-- 此script用于百度统计工具-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a411c4d1664dd70048ee98afe7b28f0b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    <section class="p-question-detail">
+        <header class="box vertical sec-header question-banner">
+    <div class="banner-box box vertical">
+        <div class="box vertical box-aw">
+            <a href="https://www.oschina.net/question" class="sec-title">
+                <svg width="135" height="31" viewBox="0 0 135 31" class="question-logo">
+				    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#question-logo"></use>
+				</svg>
+            </a>
+                            <a class="sec-link hor-line" href="https://www.oschina.net/question/my?show=mine">我的发帖</a>
+
+            <a class="sec-link hor-line" href="https://www.oschina.net/question/my?show=reply">我的回帖</a>
+
+                        <a class="sec-link" href="https://www.oschina.net/question/ask">我要提问</a>
+        </div>
+        <div class="box-fr">
+            <form class="sec-search" action="https://www.oschina.net/search">
+                                <input type="text" class="search-text" placeholder="在 45727 款开源软件中搜索" name="q">
+                <input type="hidden" name="scope" value="bbs">
+                <button type="submit" class="ic-search box vertical"></button>
+            </form>
+        </div>
+    </div>
+</header>        <main class="box sc-container">
+            
+<style>
+    main header section ul{
+        padding-left: 40px;
+        list-style-type: disc;
+    }
+</style>
+
+<article class="box-aw main-container">
+    <header class="body">
+        <header class="question-title-wrapper">
+            <nav class="box vertical sub-nav">
+                <a href="https://www.oschina.net/question?catalog=1">技术问答</a>&nbsp;&gt;&nbsp;
+                                                                                                                <a href="https://www.oschina.net/question/tag/openfpgaduino">OpenFPGAduino</a>&nbsp;&gt;&nbsp;
+                                                </nav>
+            <!-- 广告2.0  -->
+             <div data-traceid="question_detai_above_1" data-tracepid="question_detai_above" style="margin: -20px 0 25px">
+
+  <script async="" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f(3).txt"></script>
+<!-- oschina-blog-728x90 -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7090564139599510" data-ad-slot="5590362768" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:728px;height:90px;" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>            <a class="cursor" href="https://www.oschina.net/question/2720166_2280605?sort=time#form_answer">
+                <div class="jump-answer" title="跳到回复">
+                    <div class="answer_count">32</div>
+                    <div>回答</div>
+                </div>
+            </a>
+                                    <span class="question-title-link">
+                高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网
+            </span>
+        </header>
+
+        <header class="text-jj">
+             <a data-traceid="question_detail_above_text_link_1" data-tracepid="question_detail_above_text_link" style="color:#A00;font-weight:bold; " href="http://click.aliyun.com/m/1000000018/" target="_blank"><strong style="font-size: 16px">阿里云高性能服务器2折起！
+&gt;&gt;&gt; </strong></a>&nbsp;&nbsp;<img style="max-height: 32px; max-width: 32px;" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/hot3.png" align="absmiddle">        </header>
+        <section class="box content-container">
+            <aside class="box-fl">
+                <div class="vote_collect_wrapper">
+                    <div class="vote_collect">
+
+                        <a class="vote_up  " data-violet="support" onclick="page.vote(this,2280605,true)" title="顶">
+                        </a>
+                        <span class="vote_count">0</span>
+
+                        <a class="vote_down " data-violet="support" onclick="page.vote(this,2280605,false)" title="踩">
+                        </a>
+                    </div>
+                    
+                    <a data-violet="collect" class="collect collect_question tooltipstered" onclick="page.removeFavorite(this,2280605)" data-ajax="https://www.oschina.net/question/_widgets/_collect?id=2280605" data-tooltipster="{&quot;side&quot;:&quot;right&quot;,&quot;trigger&quot;:&quot;custom&quot;,&quot;triggerOpen&quot;:{&quot;mouseenter&quot;:true,&quot;click&quot;:true},&quot;triggerClose&quot;:{&quot;click&quot;:true,&quot;scroll&quot;:true,&quot;mouseleave&quot;: true}}">
+                        <span class="collect-count">收藏(11)</span>
+                    </a>
+                </div>
+            </aside>
+            <main class="box-aw">
+                <header class="detail">
+                    <section class="wrap cke_editable cke_editable_themed cke_contents_ltr cke_show_borders clearfix">
+                        <p>OSCHINA 本期高手问答<strong>(2018 年 5 月 29&nbsp;日 — 6&nbsp;月 4&nbsp;日)</strong>我们邀请到了李知周老师<a href="https://my.oschina.net/u/2330392" target="_blank" rel="nofollow"></a><a href="https://my.oschina.net/u/2330392" target="_blank" rel="nofollow"></a><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a>  和大家就关于使用 JavaScript 构建物联网方面的问题进行讨论。</p>
+
+<p></p>
+
+<p>李知周，曾在国际知名投资银行从事基于大数据与机器学习的网络安全和交易监管的开发及数据分析工作，4年思科软件研发工程师经历，中国科学院微系统与信息技术研究所博士，发表过多篇机器学习相关 EI&nbsp;SCI 学术论文，拥有多项国际国内专利，物联网早期创业者与创客。擅长物联网网络设备软硬件研发，大数据分析与机器学习研发，熟练掌握多种开发语言（包括 C、JavaScript、Java、Scala、Verilog），掌握端到端的网络系统架构与设计。开源物联网硬件项目 OpenFPGAduino 的发起者和维护者：<a href="https://www.oschina.net/p/openfpgaduino" target="_blank" rel="nofollow">https://www.oschina.net/p/openfpgaduino</a>。</p>
+
+<p><img alt="" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/184006_mdsf_2720166.jpg"></p>
+
+<p>关于 JavaScript，有一条著名的“Atwood定律” —— 凡是能用 JavaScript 写出来的，最终都会用 JavaScript 写出来。所以，极具创客精神的开发者将互联网时代的 JavaScript 语言应用到了物联网连接的智能设备上，这是非常有意义的创新。</p>
+
+<p>而且，目前具备&nbsp;JavaScript 交互能力的智能设备在逐渐增多，其在硬件端以及物联网领域的大规模应用将出现全新一轮的机会。全面深入了解 JavaScript，也是进入物联网世界的一把钥匙。</p>
+
+<p><strong>本期高手问答内容：</strong></p>
+
+<ol>
+	<li><strong>开源物联网硬件项目 OpenFPGAduino</strong></li>
+	<li><strong>基于 JavaScript 的物联网开发</strong></li>
+	<li><strong>JavaScript 与物联网核心：架构设计与数据处理</strong></li>
+</ol>
+
+<p>为了鼓励踊跃提问，<a href="https://my.oschina.net/huazhangbook" target="_blank" rel="nofollow"></a><a href="https://my.oschina.net/huazhangbook" target="_blank" rel="nofollow"></a><a href="https://my.oschina.net/huazhangbook" class="referer" target="_blank">@华章</a>  会在问答结束后从提问者中抽取 5 名幸运会员赠予《JavaScript物联网架构与数据处理》一书。</p>
+
+<p><img alt="" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/185633_62vM_2720166.jpg"></p>
+
+<p>购买链接：<a href="https://item.jd.com/12360162.html" target="_blank" rel="nofollow">https://item.jd.com/12360162.html</a></p>
+
+<p><span style="color:#008080"><strong>OSChina 高手问答一贯的风格，不欢迎任何与主题无关的讨论和喷子。</strong></span></p>
+
+<p>下面欢迎大家就关于使用 JavaScript 构建物联网方面的问题向<a href="https://my.oschina.net/u/2330392" target="_blank" rel="nofollow"></a><a href="https://my.oschina.net/u/2330392" target="_blank" rel="nofollow"></a><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a>  提问，请直接回帖提问。</p>
+
+                            
+                    </section>
+                    <style type="text/css">.clearfix {overflow: auto;zoom: 1;}</style>
+                </header>
+                <section style="margin-top:40px;">
+                    <article class="poll">
+                                            </article>
+
+                    <article class="box">
+                        <div class="box-aw">
+                            <div class="box wrap vertical  toolbar_tags">
+                                                                                                                                                                                            <div class="box tooltipstered" data-ajax="/question/_widgets/tag_introduce?type=project&amp;tag=40352" data-tooltipster="{&quot;side&quot;:&quot;bottom&quot;}">
+                                            <a href="https://www.oschina.net/question/tag/openfpgaduino" class="tag project" data-id="40352" title="嵌入式物联网软硬件开发平台 OpenFPGAduino">OpenFPGAduino</a>
+                                        </div>
+                                                                                                                                                            <div class="box tooltipstered" data-ajax="/question/_widgets/tag_introduce?type=other&amp;tag=4491" data-tooltipster="{&quot;side&quot;:&quot;bottom&quot;}">
+                                            <a href="https://www.oschina.net/question/tag/%E9%AB%98%E6%89%8B%E9%97%AE%E7%AD%94" class="tag other" data-id="4491" title="">高手问答</a>
+                                        </div>
+                                                                                                                                </div>
+                            <div class="box vertical toolbar_socials">
+                                <a class="report" onclick="page.report(2280605,2,&#39;https://www.oschina.net/question/2720166_2280605&#39;)">举报</a>
+                                <a style="cursor: default;" class="share" href="javascript:void(0);">分享</a>
+                                <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1527820568076">
+                                    <a class="bds_tsina" data-cmd="tsina" data-violet="share" title="分享到新浪微博"></a>
+                                    <a class="bds_tqq" data-cmd="tqq" data-violet="share" title="分享到腾讯微博"></a>
+                                    <a class="bds_weixin" data-cmd="weixin" data-violet="share" title="分享到微信"></a>
+                                </div>
+                                                                <script type="text/javascript" async="async">
+                                    window._bd_share_config = {
+                                        "common": {
+                                            "bdSnsKey": {},
+                                            "bdUrl": "https://www.oschina.net/question/2720166_2280605",
+                                            "bdText": "",
+                                            "bdMini": "2",
+                                            "bdMiniList": ["tsina", "tqq"],
+                                            "bdPic": "",
+                                            "bdStyle": "0",
+                                            "bdSize": "16"
+                                        }, "share": {"bdSize": 16}
+                                    };
+                                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = '/js/bdshare_api/share.js'];
+                                </script>
+
+                                                                    <a class="add_detail" onclick="page.addQuestion(2280605)">补充话题</a>
+                                                                                                                            </div>
+                        </div>
+                        <div class="box-fr question-author">
+                            <div class="box" title="局长">
+                                <div class="vertical box-aw author-info">
+                                    <a class="author-name" href="https://my.oschina.net/hardbone" target="_blank">
+                                        局长
+                                    </a>
+                                    <div class="summary">
+                                        <span class="pub_time">发帖于4天前</span>
+                                        <span class="answer_view_count">
+                                            <a href="https://www.oschina.net/question/2720166_2280605?sort=time#answer_list_content_pjax" class="answer_count">32回</a>/<a class="view_count">2K+阅</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-fr">
+                                    <a class="ahthor-img" href="https://my.oschina.net/hardbone" target="_blank">
+                                        <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/2720166_50.jpg" align="absmiddle" alt="局长" title="局长" class="SmallPortrait" user="2720166">                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                            <footer class="additional_remarks" id="additional_remarks">
+                                    </footer>
+            </main>
+        </section>
+    </header>
+    <!-- 广告2.0  -->
+     <div data-traceid="question_detai_down_1" data-tracepid="question_detai_down" style="margin: 0 0 20px;">
+    <!-- oschina-question-728x90 -->
+    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7090564139599510" data-ad-slot="5590362768" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:728px;height:90px;" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/saved_resource(1).html"></iframe></ins></ins></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script type="text/javascript">
+        function googleAdJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+            element.async = true;
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener) {
+            window.addEventListener("load", googleAdJSAtOnload, false);
+        } else if (window.attachEvent) {
+            window.attachEvent("onload", googleAdJSAtOnload);
+        } else {
+            window.onload = googleAdJSAtOnload;
+        }
+    </script>
+</div>    <div id="answer_list_content_pjax">
+            <style type="text/css">
+    .question_answer_header {
+        font-size: 14px;
+        height: 32px;
+        margin: 0 0 15px;
+        box-shadow: inset 0 -1px 0 0 #D8D8D8;
+    }
+
+    .question_answer_count {
+        font-size: 16px;
+        color: #111;
+    }
+
+    .last_answers {
+        font-size: 14px;
+        color: #898989;
+    }
+
+    .answer_sort {
+        font-size: 12px;
+        color: #111;
+    }
+
+    .answer_sort.current {
+        color: #49AB4F;
+    }
+    .question_answer_list{
+        margin-top:30px;
+    }
+</style>
+<footer class="question_answer_list">
+    <header class="box question_answer_header">
+        <div class="box-aw">
+            <span class="question_answer_count">共有<span id="question_comment_total_count">32</span>个答案</span>
+                            <a class="last_answers" href="https://www.oschina.net/question/2720166_2280605?sort=time">
+                    最后回答: 23小时前
+                </a>
+                    </div>
+
+        <div class="box-fr">
+            <a href="https://www.oschina.net/question/2720166_2280605?sort=default" class="answer_sort ">
+                按票数排序</a>
+            <a href="https://www.oschina.net/question/2720166_2280605?sort=time" class="answer_sort current">
+                显示最新答案
+            </a>
+        </div>
+    </header>
+
+    <article id="anser_list" class="answer_list">
+                    <section class="box answer " id="answer_1366492">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366492,true)" id="a_post_voteup_1366492" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366492,false)" id="a_post_votedown_1366492" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            js如何处理大数据呢
+ 
+        </header>
+        <section class="answer_replies" id="answer_replies_1366492">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366492,0,&#39;#answer_replies_1366492&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366492">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_tool" onclick="page.report(1366492,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366492&#39;)">举报</a>
+                            <span class="tail">
+                    来自
+                    <a href="https://www.oschina.net/mobile" target="_blank">
+                                    iPhone                        </a>
+                </span>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="望月草">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/u/3850801" target="_blank">望月草</a>
+            <div class="reply-time" title="2018-05-31 11:43">23小时前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/u/3850801" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/3850801_50.jpg" align="absmiddle" alt="望月草" title="望月草" class="SmallPortrait" user="3850801">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366432">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366432,true)" id="a_post_voteup_1366432" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366432,false)" id="a_post_votedown_1366432" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a> <strong>物联网开发的 开发难道就是物品的网络销售么</strong></p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366432">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366432,0,&#39;#answer_replies_1366432&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366432">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366432,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366432&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="凯旋归来">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/kaiyuanmingyuan" target="_blank">凯旋归来</a>
+            <div class="reply-time" title="2018-05-30 20:59">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/kaiyuanmingyuan" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/2707897_50.jpeg" align="absmiddle" alt="凯旋归来" title="凯旋归来" class="SmallPortrait" user="2707897">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366394">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366394,true)" id="a_post_voteup_1366394" title="顶">
+                </a>
+                <span class="vote_count">1</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366394,false)" id="a_post_votedown_1366394" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p>@李知周&nbsp;Jeff Atwood曾提出“任何能够用JavaScript实现的应用，最终都必将用JavaScript实现”。可见他对JavaScript的推崇。而在当下这个物联网大热的时代，JavaScript会成为下一代物联网全栈开发语言吗？其相对其他语言，主要优势是什么呢？对于传统开发者（主要使用Java/Python等）真得要开始认真考虑JavaScript了吗？谢谢！</p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366394">
+            <header class="answer_reply_title">--- 共有 1 条评论 ---</header>
+<section class="answer_reply_list">
+            <div class="answer_reply" id="answer_reply_1366396">
+            <div class="anser_reply_content">
+                <a class="user" href="https://my.oschina.net/u/2463773">jasonwu24</a>：
+                <span class="content">JavaScript支持HTTP和JSON、支持函数式编程、可提供交互式环境等特点堪称适用于物联网全栈开发。JavaScript的回调与事件循环等基于事件驱动的编程模型非常适合物联网。JavaScript本来就是实现从服务器端向客户端部署的一门语言，其天然就具有在网路上实现远程部署的属性，实现起来就像你用浏览器下载JavaScript脚本并运行一样简单。</span>
+                <span class="pub_time">2天前</span>
+                <span class="toolbar">
+                    <a onclick="page.commentAnswer(1366394,2463773,&#39;#answer_replies_1366394&#39;)" class="reply">回复</a>
+                                    </span>
+            </div>
+        </div>
+    </section>
+<footer class="answer_reply_pager">
+    </footer>
+        </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366394,0,&#39;#answer_replies_1366394&#39;)">评论(1)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366394">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366394,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366394&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="tuo_">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/tuotuotuo" target="_blank">tuo_</a>
+            <div class="reply-time" title="2018-05-30 17:34">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/tuotuotuo" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/3807202_50.jpeg" align="absmiddle" alt="tuo_" title="tuo_" class="SmallPortrait" user="3807202">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366316">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366316,true)" id="a_post_voteup_1366316" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366316,false)" id="a_post_votedown_1366316" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a>  &nbsp;老师你好,我看了洗你的开源项目, 发现我比较关注的OpenFPGAduino-master\machinelearning,</p>
+
+<p>和OpenFPGAduino-master\bigdata 都空的,请问什么时候方便上传一下? 还是没有完成?</p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366316">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366316,0,&#39;#answer_replies_1366316&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366316">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366316,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366316&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="tom653">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/sin58" target="_blank">tom653</a>
+            <div class="reply-time" title="2018-05-30 15:03">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/sin58" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/1991666_50.jpg" align="absmiddle" alt="tom653" title="tom653" class="SmallPortrait" user="1991666">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366295">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366295,true)" id="a_post_voteup_1366295" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366295,false)" id="a_post_votedown_1366295" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a>  js在嵌入式设备中的运行效率是如何优化的，针对一些实时任务处理的业务，该怎么适配。</p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366295">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366295,0,&#39;#answer_replies_1366295&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366295">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366295,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366295&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="hello_win">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/u/232345" target="_blank">hello_win</a>
+            <div class="reply-time" title="2018-05-30 14:43">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/u/232345" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/232345_50.jpg" align="absmiddle" alt="hello_win" title="hello_win" class="SmallPortrait" user="232345">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366261">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366261,true)" id="a_post_voteup_1366261" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366261,false)" id="a_post_votedown_1366261" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+             这个侧重于数据处理还是物理设备控制？我做一个快递柜方案:小程序提交操做请求到web服务器，web服务器提交到swoole创建http服务，该服务中同时有tcp服务和硬件设备一直保持长连接，收到http请求后解析通过tcp发送到硬件，感觉这个流程太长，本书中有类似方案么？
+        </header>
+        <section class="answer_replies" id="answer_replies_1366261">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366261,0,&#39;#answer_replies_1366261&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366261">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_tool" onclick="page.report(1366261,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366261&#39;)">举报</a>
+                            <span class="tail">
+                    来自
+                    <a href="https://www.oschina.net/mobile" target="_blank">
+                                    Android                        </a>
+                </span>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="cetclyb">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/cetclyb" target="_blank">cetclyb</a>
+            <div class="reply-time" title="2018-05-30 13:30">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/cetclyb" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/77286_50.jpg" align="absmiddle" alt="cetclyb" title="cetclyb" class="SmallPortrait" user="77286">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366228">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366228,true)" id="a_post_voteup_1366228" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366228,false)" id="a_post_votedown_1366228" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a>  能耗问题有吗</p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366228">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366228,0,&#39;#answer_replies_1366228&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366228">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366228,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366228&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="noday">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/noday" target="_blank">noday</a>
+            <div class="reply-time" title="2018-05-30 11:31">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/noday" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/147849_50.png" align="absmiddle" alt="noday" title="noday" class="SmallPortrait" user="147849">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366223">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366223,true)" id="a_post_voteup_1366223" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366223,false)" id="a_post_votedown_1366223" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a>  你好！js可以写肯定没有问题，但是物联网平台一般会处理很多数据，那么单体架构就很难支撑，而现在围绕js的生态又很少有相关的支撑，所有我觉得在真实的环境中是不是应该只应用在项目的局部？</p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366223">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366223,0,&#39;#answer_replies_1366223&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366223">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366223,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366223&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="liuzeyang">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/u/2528990" target="_blank">liuzeyang</a>
+            <div class="reply-time" title="2018-05-30 11:28">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/u/2528990" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/2528990_50.jpeg" align="absmiddle" alt="liuzeyang" title="liuzeyang" class="SmallPortrait" user="2528990">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366159">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366159,true)" id="a_post_voteup_1366159" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366159,false)" id="a_post_votedown_1366159" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a> </p>
+
+<p>那Javascript占开发的比例大概多少，不可能全用javascript实现吧？或者能深入应用到那些方面？</p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366159">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366159,0,&#39;#answer_replies_1366159&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366159">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366159,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366159&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="cmxz">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/u/2245930" target="_blank">cmxz</a>
+            <div class="reply-time" title="2018-05-30 09:51">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/u/2245930" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/2245930_50.jpg" align="absmiddle" alt="cmxz" title="cmxz" class="SmallPortrait" user="2245930">            </a>
+        </div>
+    </aside>
+</section>
+                    <section class="box answer " id="answer_1366117">
+    <aside class="box-fl">
+        <div class="vote_collect_wrapper answer_vote">
+            <div class="vote_collect answer_vote">
+                <a class="vote_up " onclick="page.voteAnswer(this,1366117,true)" id="a_post_voteup_1366117" title="顶">
+                </a>
+                <span class="vote_count">0</span>
+                <a class="vote_down " onclick="page.voteAnswer(this,1366117,false)" id="a_post_votedown_1366117" title="踩">
+                </a>
+            </div>
+
+                                                </div>
+    </aside>
+    <article class="box-aw" style="margin-right:25px;">
+        <header class="wrap answer_detail">
+            <p><a href="https://my.oschina.net/u/2330392" class="referer" target="_blank">@李知周</a>  和micropython相比较最大的优势是？</p>
+
+        </header>
+        <section class="answer_replies" id="answer_replies_1366117">
+                    </section>
+        <footer class="box vertical answer_toolbar">
+            <a class="answer_tool cursor" onclick="page.commentAnswer(1366117,0,&#39;#answer_replies_1366117&#39;)">评论(0)</a>
+                            <a class="answer_tool" href="https://www.oschina.net/question/answer?question=2280605&amp;answer=1366117">
+                    引用此答案
+                </a>
+                                    <a class="cursor answer_report" onclick="page.report(1366117,17,&#39;https://www.oschina.net/question/2720166_2280605#AnchorAnswer1366117&#39;)">举报</a>
+                    </footer>
+    </article>
+    <aside class="box box-fr answer_user" title="clouddyy">
+        <div class="box-aw user_info">
+            <a class="wrap user_name" href="https://my.oschina.net/clouddyy" target="_blank">clouddyy</a>
+            <div class="reply-time" title="2018-05-29 22:42">2天前</div>
+        </div>
+        <div class="box-fr">
+            <a href="https://my.oschina.net/clouddyy" target="_blank" class="user_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/347223_50.jpeg" align="absmiddle" alt="clouddyy" title="clouddyy" class="SmallPortrait" user="347223">            </a>
+        </div>
+    </aside>
+</section>
+            </article>
+                    <style type="text/css">
+        .paging {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display:         flex;
+             -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+            -ms-flex-pack: end;
+            -moz-box-pack: end;
+            -webkit-box-pack: end;
+            width: 100%;
+            right: 0;
+            margin: 20px 0;
+        }
+        .paging li,
+        .paging .page {
+            display: inline-block;
+            height: 32px;
+            font-size: 16px;
+            text-align: center;
+            color: #c9c9c9;
+            box-shadow: inset 0 0 0 1px #c9c9c9;
+            transition:box-shadow .2s,color .2s;
+            margin-right: 10px;
+        }
+        .paging li a,
+        .paging .page a {
+            padding: 0 10px;
+            height: 32px;
+            line-height: 32px;
+            display: block;
+            color: #999;
+        }
+        .paging li:hover,
+        .paging .page:hover,
+        .paging li.current,
+        .paging .page.current,
+        .paging li.active,
+        .paging .page.active {
+            color: #4eaa4c;
+            box-shadow: inset 0 0 0 1px #4eaa4c;
+        }
+        .paging li:hover a,
+        .paging .page:hover a,
+        .paging li.current a,
+        .paging .page.current a,
+        .paging li.active a,
+        .paging .page.active a {
+            color: #4eaa4c;
+        }
+        .paging ul,
+        .paging .pager {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display:         flex;
+        }
+
+        .paging li:last-child{margin-right: 0;}
+    </style>
+                                                                            <ul class="paging">
+                        <li class="active"><a href="https://www.oschina.net/question/2720166_2280605?sort=time&amp;p=1">1</a></li>            <li><a href="https://www.oschina.net/question/2720166_2280605?sort=time&amp;p=2">2</a></li>            <li><a href="https://www.oschina.net/question/2720166_2280605?sort=time&amp;p=3">3</a></li>            <li><a href="https://www.oschina.net/question/2720166_2280605?sort=time&amp;p=4">4</a></li>            <li><a href="https://www.oschina.net/question/2720166_2280605?sort=time&amp;p=2">下一页</a></li>        </ul>
+            </footer>
+    </div>
+    <style type="text/css">
+    .answer_pub_form {
+        margin: 40px 0;
+    }
+
+    .answer_pub_form .toolbar {
+        margin: 15px 0 0 0;
+        height: 26px;
+    }
+
+    #txt_answner{
+        width: 100%;
+        resize: none;
+        border-radius: 2px;
+        border: 1px solid #ddd;
+        min-height: 161px;
+    }
+
+    .answer_pub_form .submit_button{
+        text-align: center;
+        font-size: 14px;
+        height: 26px;
+        background: #49AB4F;
+        color: #fff;
+        padding: 0 8px;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+</style>
+<section class="answer_pub_form">
+    <form id="form_answer" action="https://www.oschina.net/action/question/answer" method="post">
+        <input type="hidden" value="2330392" bind="2330392">
+        <input type="hidden" value="2280605" bind="2280605">
+        <textarea id="txt_answner" name="body" style="display: none; visibility: hidden;" bind="                            @李知周
+                    ">                            @李知周
+                    </textarea><div id="cke_txt_answner" class="cke_1 cke cke_reset cke_chrome cke_editor_txt_answner cke_ltr cke_browser_webkit cke_hidpi" dir="ltr" lang="zh-cn" role="application" aria-labelledby="cke_txt_answner_arialbl"><span id="cke_txt_answner_arialbl" class="cke_voice_label">所见即所得编辑器, txt_answner</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; user-select: none;"><span id="cke_10" class="cke_voice_label">工具栏</span><span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_10" onmousedown="return false;"><span id="cke_12" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_13" class="cke_button cke_button__link cke_button_off" href="javascript:void(&#39;插入/编辑超链接&#39;)" title="插入/编辑超链接" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_13_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(1,event);" onfocus="return CKEDITOR.tools.callFunction(2,event);" onclick="CKEDITOR.tools.callFunction(3,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -504px;background-size:16px;">&nbsp;</span><span id="cke_13_label" class="cke_button_label cke_button__link_label" aria-hidden="false">插入/编辑超链接</span></a><a id="cke_14" class="cke_button cke_button__unlink cke_button_disabled " href="javascript:void(&#39;取消超链接&#39;)" title="取消超链接" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(4,event);" onfocus="return CKEDITOR.tools.callFunction(5,event);" onclick="CKEDITOR.tools.callFunction(6,this);return false;"><span class="cke_button_icon cke_button__unlink_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -528px;background-size:16px;">&nbsp;</span><span id="cke_14_label" class="cke_button_label cke_button__unlink_label" aria-hidden="false">取消超链接</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_15" class="cke_button cke_button__textcolor cke_button_off" href="javascript:void(&#39;文本颜色&#39;)" title="文本颜色" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_15_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(7,event);" onfocus="return CKEDITOR.tools.callFunction(8,event);" onclick="CKEDITOR.tools.callFunction(9,this);return false;"><span class="cke_button_icon cke_button__textcolor_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -888px;background-size:16px;">&nbsp;</span><span id="cke_15_label" class="cke_button_label cke_button__textcolor_label" aria-hidden="false">文本颜色</span><span class="cke_button_arrow"></span></a><a id="cke_16" class="cke_button cke_button__bgcolor cke_button_off" href="javascript:void(&#39;背景颜色&#39;)" title="背景颜色" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_16_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(10,event);" onfocus="return CKEDITOR.tools.callFunction(11,event);" onclick="CKEDITOR.tools.callFunction(12,this);return false;"><span class="cke_button_icon cke_button__bgcolor_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -864px;background-size:16px;">&nbsp;</span><span id="cke_16_label" class="cke_button_label cke_button__bgcolor_label" aria-hidden="false">背景颜色</span><span class="cke_button_arrow"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_17" class="cke_button cke_button__image cke_button_off" href="javascript:void(&#39;图像&#39;)" title="图像" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_17_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(13,event);" onfocus="return CKEDITOR.tools.callFunction(14,event);" onclick="CKEDITOR.tools.callFunction(15,this);return false;"><span class="cke_button_icon cke_button__image_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -336px;background-size:16px;">&nbsp;</span><span id="cke_17_label" class="cke_button_label cke_button__image_label" aria-hidden="false">图像</span></a><a id="cke_18" class="cke_button cke_button__flash cke_button_off" href="javascript:void(&#39;Flash&#39;)" title="Flash" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_18_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(16,event);" onfocus="return CKEDITOR.tools.callFunction(17,event);" onclick="CKEDITOR.tools.callFunction(18,this);return false;"><span class="cke_button_icon cke_button__flash_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/flash/icons/hidpi/flash.png?t=G2VC20161114&#39;);background-position:0 0px;background-size:16px;">&nbsp;</span><span id="cke_18_label" class="cke_button_label cke_button__flash_label" aria-hidden="false">Flash</span></a><a id="cke_19" class="cke_button cke_button__table cke_button_off" href="javascript:void(&#39;表格&#39;)" title="表格" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_19_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(19,event);" onfocus="return CKEDITOR.tools.callFunction(20,event);" onclick="CKEDITOR.tools.callFunction(21,this);return false;"><span class="cke_button_icon cke_button__table_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -720px;background-size:16px;">&nbsp;</span><span id="cke_19_label" class="cke_button_label cke_button__table_label" aria-hidden="false">表格</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_20" class="cke_button cke_button__bold cke_button_off" href="javascript:void(&#39;加粗&#39;)" title="加粗" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_20_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(22,event);" onfocus="return CKEDITOR.tools.callFunction(23,event);" onclick="CKEDITOR.tools.callFunction(24,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 0px;background-size:16px;">&nbsp;</span><span id="cke_20_label" class="cke_button_label cke_button__bold_label" aria-hidden="false">加粗</span></a><a id="cke_21" class="cke_button cke_button__italic cke_button_off" href="javascript:void(&#39;倾斜&#39;)" title="倾斜" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_21_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(25,event);" onfocus="return CKEDITOR.tools.callFunction(26,event);" onclick="CKEDITOR.tools.callFunction(27,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -24px;background-size:16px;">&nbsp;</span><span id="cke_21_label" class="cke_button_label cke_button__italic_label" aria-hidden="false">倾斜</span></a><a id="cke_22" class="cke_button cke_button__strike cke_button_off" href="javascript:void(&#39;删除线&#39;)" title="删除线" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_22_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(28,event);" onfocus="return CKEDITOR.tools.callFunction(29,event);" onclick="CKEDITOR.tools.callFunction(30,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -48px;background-size:16px;">&nbsp;</span><span id="cke_22_label" class="cke_button_label cke_button__strike_label" aria-hidden="false">删除线</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_23" class="cke_button cke_button__numberedlist cke_button_off" href="javascript:void(&#39;编号列表&#39;)" title="编号列表" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_23_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(31,event);" onfocus="return CKEDITOR.tools.callFunction(32,event);" onclick="CKEDITOR.tools.callFunction(33,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -624px;background-size:16px;">&nbsp;</span><span id="cke_23_label" class="cke_button_label cke_button__numberedlist_label" aria-hidden="false">编号列表</span></a><a id="cke_24" class="cke_button cke_button__bulletedlist cke_button_off" href="javascript:void(&#39;项目列表&#39;)" title="项目列表" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_24_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(34,event);" onfocus="return CKEDITOR.tools.callFunction(35,event);" onclick="CKEDITOR.tools.callFunction(36,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -576px;background-size:16px;">&nbsp;</span><span id="cke_24_label" class="cke_button_label cke_button__bulletedlist_label" aria-hidden="false">项目列表</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_25" class="cke_button cke_button__justifyleft cke_button_off" href="javascript:void(&#39;左对齐&#39;)" title="左对齐" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_25_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(37,event);" onfocus="return CKEDITOR.tools.callFunction(38,event);" onclick="CKEDITOR.tools.callFunction(39,this);return false;"><span class="cke_button_icon cke_button__justifyleft_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -960px;background-size:16px;">&nbsp;</span><span id="cke_25_label" class="cke_button_label cke_button__justifyleft_label" aria-hidden="false">左对齐</span></a><a id="cke_26" class="cke_button cke_button__justifycenter cke_button_off" href="javascript:void(&#39;居中&#39;)" title="居中" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_26_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(40,event);" onfocus="return CKEDITOR.tools.callFunction(41,event);" onclick="CKEDITOR.tools.callFunction(42,this);return false;"><span class="cke_button_icon cke_button__justifycenter_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -936px;background-size:16px;">&nbsp;</span><span id="cke_26_label" class="cke_button_label cke_button__justifycenter_label" aria-hidden="false">居中</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_27" class="cke_button cke_button__blockquote cke_button_off" href="javascript:void(&#39;块引用&#39;)" title="块引用" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_27_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(43,event);" onfocus="return CKEDITOR.tools.callFunction(44,event);" onclick="CKEDITOR.tools.callFunction(45,this);return false;"><span class="cke_button_icon cke_button__blockquote_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -144px;background-size:16px;">&nbsp;</span><span id="cke_27_label" class="cke_button_label cke_button__blockquote_label" aria-hidden="false">块引用</span></a><a id="cke_28" class="cke_button cke_button__codesnippet cke_button_off" href="javascript:void(&#39;插入代码段&#39;)" title="插入代码段" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_28_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(46,event);" onfocus="return CKEDITOR.tools.callFunction(47,event);" onclick="CKEDITOR.tools.callFunction(48,this);return false;"><span class="cke_button_icon cke_button__codesnippet_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -840px;background-size:16px;">&nbsp;</span><span id="cke_28_label" class="cke_button_label cke_button__codesnippet_label" aria-hidden="false">插入代码段</span></a></span><span class="cke_toolbar_separator" role="separator"></span><span id="cke_11" class="cke_combo cke_combo__format cke_combo_off" role="presentation"><span id="cke_11_label" class="cke_combo_label">格式</span><a class="cke_combo_button" title="格式" tabindex="-1" href="javascript:void(&#39;格式&#39;)" hidefocus="true" role="button" aria-labelledby="cke_11_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(50,event,this);" onfocus="return CKEDITOR.tools.callFunction(51,event);" onclick="CKEDITOR.tools.callFunction(49,this);return false;"><span id="cke_11_text" class="cke_combo_text cke_combo_inlinelabel">格式</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolgroup" role="presentation"><a id="cke_29" class="cke_button cke_button__source cke_button_off" href="javascript:void(&#39;&#39;)" title="" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_29_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(52,event);" onfocus="return CKEDITOR.tools.callFunction(53,event);" onclick="CKEDITOR.tools.callFunction(54,this);return false;"><span class="cke_button_icon cke_button__source_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -696px;background-size:16px;">&nbsp;</span><span id="cke_29_label" class="cke_button_label cke_button__source_label" aria-hidden="false"></span></a><a id="cke_30" class="cke_button cke_button__maximize cke_button_off" href="javascript:void(&#39;全屏&#39;)" title="全屏" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_30_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(55,event);" onfocus="return CKEDITOR.tools.callFunction(56,event);" onclick="CKEDITOR.tools.callFunction(57,this);return false;"><span class="cke_button_icon cke_button__maximize_icon" style="background-image:url(&#39;https://www.oschina.net/dist/www/vendor/ckeditor/4.5.8/plugins/icons_hidpi.png?t=G2VC20161114&#39;);background-position:0 -648px;background-size:16px;">&nbsp;</span><span id="cke_30_label" class="cke_button_label cke_button__maximize_label" aria-hidden="false">全屏</span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_1_contents" class="cke_contents cke_reset" role="presentation" style="height: 161px;"><span id="cke_35" class="cke_voice_label">按 ALT+0 获得帮助</span><iframe src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/saved_resource(2).html" frameborder="0" class="cke_wysiwyg_frame cke_reset" title="所见即所得编辑器, txt_answner" aria-describedby="cke_35" tabindex="0" allowtransparency="true" style="width: 100%; height: 100%;"></iframe></div><span id="cke_1_bottom" class="cke_bottom cke_reset_all" role="presentation" style="user-select: none;"><span id="cke_1_path_label" class="cke_voice_label">元素路径</span><span id="cke_1_path" class="cke_path" role="group" aria-labelledby="cke_1_path_label"><span class="cke_path_empty">&nbsp;</span></span></span></div></div>
+        <div class="box vertical toolbar">
+            <div class="box-aw">
+                                <span class="error_msg"></span>
+            </div>
+            <div class="box-fr">
+                <input type="button" class="submit_button" value="提交回答" data-violet="comment">
+            </div>
+        </div>
+    </form>
+</section></article>
+<aside class="box-fr aside-container right_toolbar">
+    <div class="aside-card quesiton_author">
+        <div class="box vertical author_user" title="局长">
+            <a href="https://my.oschina.net/hardbone" class="box-fl author_img">
+                <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/2720166_50.jpg" align="absmiddle" alt="局长" title="局长" class="SmallPortrait" user="2720166">            </a>
+            <div class="box-aw author_info">
+                <div class="author_name">
+                    作者：<a href="https://my.oschina.net/hardbone">@局长</a>
+                </div>
+                <div class="last_login_time">
+                    最近登录：3小时前
+                </div>
+            </div>
+        </div>
+                            <div class="box vertical justify toolbar">
+            <val data-name="author_id" data-value="2720166"></val>
+            <val data-name="loginUser_id" data-value="2330392"></val>
+            <a id="v-follow" class="box vertical horizontal tool-bn follow">
+                                <input type="hidden" value="2720166" bind="2720166">
+                <input type="hidden" value="xGXD0NT2TtTmicV71HQwUw0EjHpsJn59zeEHbYBo" bind="xGXD0NT2TtTmicV71HQwUw0EjHpsJn59zeEHbYBo">
+                <input type="hidden" value="follow" bind="follow">
+                <svg width="18" height="16" viewBox="0 0 18 16" class="question-follow">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#question-follow"></use>
+                </svg>
+                                    <span class="tool-bn-txt" data-origin="未关注">未关注</span>
+                            </a>
+            <a class="box vertical horizontal tool-bn message" onclick="page.sendMsg(2720166)">
+                <svg width="16" height="15" viewBox="0 0 16 15" class="question-msg">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#question-msg"></use>
+                </svg>
+                <span class="tool-bn-txt">私信</span>
+            </a>
+            <a class="box vertical horizontal tool-bn ask" href="https://www.oschina.net/question/ask?user=2720166">
+                <svg width="18" height="18" viewBox="0 0 18 18" class="question-ask">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#question-ask"></use>
+                </svg>
+                <span class="tool-bn-txt">提问</span>
+            </a>
+        </div>
+            </div>
+                			 					<div class="jj">
+			<a name="question_banner_one">
+			</a><a data-traceid="questionbanner01" data-tracepid="question_banner_one" href="http://linux.31huiyi.com/?lang=zh-cn" target="_blank" title="LC3">
+				<img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/question_banner_one_vXGmS.jpg" width="280" height="280">
+			</a>
+            			</div>
+				                    <div class="aside-card list-card">
+            <div class="box vertical list-title">
+                <div class="box-aw">局长的其它问题</div>
+                <a href="https://my.oschina.net/hardbone/?type=bbs&amp;scope=entity&amp;showme=SHOW" class="box-fr more">
+                    全部
+                </a>
+            </div>
+            <ul>
+                                    <li class="list-item">
+                                                <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/2720166_2280238" title="高手问答第 198 期 — Android 十年，一起深入剖析 Android 新特性">高手问答第 198 期 — Android 十年，一起深入剖析 Android 新特性</a>
+                        <div class="toolbar">
+                            (17回/2K+阅,1周前)
+                        </div>
+                    </li>
+                                    <li class="list-item">
+                                                <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/2720166_2279815" title="高手问答第 197 期 —— Kotiln “上位”一周年，Kotlin 问答专场等你提问！">高手问答第 197 期 —— Kotiln “上位”一周年，Kotlin 问答专场等你提问！</a>
+                        <div class="toolbar">
+                            (31回/2K+阅,3周前)
+                        </div>
+                    </li>
+                                    <li class="list-item">
+                                                <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/2720166_2279449" title="OSCHINA 问答合集[1]：老大竟然说我不会写 SQL ……">OSCHINA 问答合集[1]：老大竟然说我不会写 SQL ……</a>
+                        <div class="toolbar">
+                            (10回/5K+阅,3周前)
+                        </div>
+                    </li>
+                                    <li class="list-item">
+                                                <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/2720166_2279403" title="开源中国翻译频道贡献 2018(3-4月) 奖励名单">开源中国翻译频道贡献 2018(3-4月) 奖励名单</a>
+                        <div class="toolbar">
+                            (2回/752阅,3周前)
+                        </div>
+                    </li>
+                                    <li class="list-item">
+                                                <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/2720166_2279371" title="高手问答第 196 期 —— 号称性能提升 2 倍的 MySQL 8 来袭，我们该如何应对？">高手问答第 196 期 —— 号称性能提升 2 倍的 MySQL 8 来袭，我们该如何应对？</a>
+                        <div class="toolbar">
+                            (39回/5K+阅,4周前)
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+                            			 					<div name="question_banner_two" data-traceid="questionbanner02" data-tracepid="question_banner_two">
+			<center><script async="" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f(3).txt"></script>
+<!-- osc_news_details_sidebar_1_ad_250x250 -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-7090564139599510" data-ad-slot="9649490513" <="" ins="" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent;"><iframe width="250" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:250px;height:250px;" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/saved_resource(3).html"></iframe></ins></ins></ins></center>
+            </div>
+				                <div class="aside-card list-card">
+                            <div class="list-title">类似的话题</div>
+            <ul>
+                                                            <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/265756_48296" title="js问题，子页面js里面怎么获取父页面的元素？">js问题，子页面js里面怎么获取父页面的元素？</a>
+                            <div class="toolbar">(11回/21K+阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/218746_48727" title="问一个很简单的js问题">问一个很简单的js问题</a>
+                            <div class="toolbar">(5回/329阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/218746_49274" title="简单的JS问题一个～～">简单的JS问题一个～～</a>
+                            <div class="toolbar">(4回/259阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/265756_49372" title="js问题，Js里面的除法运算符“/”，得到的结果是小数，怎么能得到类似javaapi里面的那样的整数呢？">js问题，Js里面的除法运算符“/”，得到的结果是小数，怎么能得到类似javaapi里面的那样的整数呢？</a>
+                            <div class="toolbar">(5回/36K+阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/271345_49923" title="求高手帮我解决这道javascript图片滚动问题">求高手帮我解决这道javascript图片滚动问题</a>
+                            <div class="toolbar">(2回/422阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/199371_50459" title="js 打开窗口提示提示【错误: &#39;window.top.document.all.WhiteCover.style&#39; 为空或不是对象】">js 打开窗口提示提示【错误: 'window.top.document.all.WhiteCover.style' 为空或不是对象】</a>
+                            <div class="toolbar">(2回/1K+阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/94949_50951" title="一个js效果实现原理是什么？">一个js效果实现原理是什么？</a>
+                            <div class="toolbar">(3回/780阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/162847_50953" title="各主流浏览器对JS的运行机制">各主流浏览器对JS的运行机制</a>
+                            <div class="toolbar">(4回/985阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/258279_51049" title="javascript可以实现网页上传文件到服务器文件目录么？">javascript可以实现网页上传文件到服务器文件目录么？</a>
+                            <div class="toolbar">(3回/3K+阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/218746_51273" title="简单的一个JS问题～～～">简单的一个JS问题～～～</a>
+                            <div class="toolbar">(1回/273阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/437172_51481" title="javascript有哪些好书推荐？">javascript有哪些好书推荐？</a>
+                            <div class="toolbar">(12回/3K+阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/261533_51699" title="js重新注册事件后，如何让事件不自动执行">js重新注册事件后，如何让事件不自动执行</a>
+                            <div class="toolbar">(3回/835阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/245988_51876" title="js控制，打开一个新的页面，但是不跳转过去">js控制，打开一个新的页面，但是不跳转过去</a>
+                            <div class="toolbar">(9回/11K+阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/436554_52093" title="JavaScript拆分字段">JavaScript拆分字段</a>
+                            <div class="toolbar">(3回/312阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/229358_37058" title="关于一句代码，有点疑惑，请教一下各路大神">关于一句代码，有点疑惑，请教一下各路大神</a>
+                            <div class="toolbar">(3回/554阅, 6年前)</div>
+                        </li>
+                                                                                <li class="list-item">
+                            <a class="sc sc-text wrap list-content" href="https://www.oschina.net/question/200138_37155" title="求解一段js代码，谢谢">求解一段js代码，谢谢</a>
+                            <div class="toolbar">(1回/483阅, 6年前)</div>
+                        </li>
+                                                </ul>
+            </div>
+</aside>        </main>
+    </section><iframe id="google_osd_static_frame_5588028014063" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/saved_resource(4).html"></iframe>
+    <div style="display: none;"><div id="loading-effect" style="display:none;">
+    <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+    </div>
+</div></div>
+    <div id="v-report">
+        <comp-report :param="{action:&#39;/action/communityManage/reportv2&#39;}"></comp-report>
+    </div>
+                                                            
+<input type="hidden" value="9065f984-22b8-4122-b87b-a95ec5640f1c" id="uu">
+    <input type="hidden" value="ANp%2F%2BW5MwznG3LPIHQ59Kmj4716kInvg8fj3kQZ8ZWcVPvAkghUqH68IcfytnjL9A9VY3VWQfZJlJbAZkrFs1xXyXqeWY9XmbH9c9GgCU%2FSe4UTLeApycpv185t2g1hhN%2BRBkGyamXpfykZjBs666tGWRFkZxL6V" id="oo">
+
+
+<script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/jquery(1).js"></script>
+<script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/jquery.cookie.js"></script>
+
+    <div class="item tool-top" style="display: block;">
+        <a href="javascript:void(0)" class="over">
+            <div class="icon">
+                <i class="icon-svg icon-go-top"></i>
+            </div>
+            <div class="txt">顶部</div>
+        </a>
+    </div>
+    <script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/ckeditor.js"></script>
+    <style type="text/css">
+    .common-footer .osc-map {
+        font-size: 0;
+        padding: 16px 0 0;
+        background: #FAFAFA;
+    }
+
+    .common-footer .box {
+        overflow: hidden;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+
+    .common-footer .map-header{
+        font-size: 12px;
+        font-weight: normal;
+        margin: 0 0 10px;
+        height: 18px;
+        color: #4A4A4A;
+    }
+    .common-footer .map-header.bigger{font-weight: bold;}
+
+    .common-footer .map-link{
+        font-size: 12px;
+        display: block;
+        line-height: 20px;
+        color: #4A4A4A;
+        transition:color .2s;
+    }
+
+    .common-footer .map-link:hover{
+        color:#21B351;
+    }
+
+    .common-footer .wechat{margin: 0 auto;}
+
+    .common-footer .osc-footer {
+        background: #444444;
+
+    }
+    .common-footer .content-wrapper{
+        width:1200px;
+        margin:0 auto;
+        height: 36px;
+    }
+    .common-footer .osc-footer *{
+        font-size: 12px;
+        color: #CFCFCF;
+    }
+    .common-footer .dl_mob{
+        transition:All 0.4s ease-in-out;
+        -webkit-transition:All 0.4s ease-in-out;
+        -moz-transition:All 0.4s ease-in-out;
+        -o-transition:All 0.4s ease-in-out;
+        width:120px;
+        height:122px;
+        display:block;
+        margin-bottom: -11px;
+        z-index: -1;
+    }
+    .common-footer .dl_mob:hover {
+        transform:translate(0,-10px);
+        -webkit-transform:translate(0,-10px);
+        -moz-transform:translate(0,-10px);
+        -o-transform:translate(0,-10px);
+        -ms-transform:translate(0,-10px);
+    }
+    .merge{
+        width: auto!important;
+        margin: 0!important;
+    }
+    figure{
+        margin: 0;
+    }
+</style>
+<footer class="common-footer">
+
+    <div class="osc-map">
+        <div class="box justify sc-container" style="overflow: hidden;">
+            <div>
+                <h2 class="map-header bigger">社区</h2>
+                <ul>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/project" target="_blank">开源项目</a></li>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/question" target="_blank">技术问答</a></li>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/tweets" target="_blank">动弹</a></li>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/blog" target="_blank">博客</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="map-header bigger"></h2>
+                <ul>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/news" target="_blank">开源资讯</a></li>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/translate" target="_blank">技术翻译</a></li>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/android" target="_blank">专题</a></li>
+                    <li><a class="map-link cursor" href="https://job.oschina.net/" target="_blank">招聘</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="map-header bigger">众包</h2>
+                <ul>
+                    <li><a class="map-link cursor" href="https://zb.oschina.net/projects" target="_blank">项目大厅</a></li>
+                    <li><a class="map-link cursor" href="https://zb.oschina.net/services" target="_blank">软件与服务</a></li>
+                    <li><a class="map-link cursor" href="https://zb.oschina.net/account/choose-role" target="_blank">接活赚钱</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="map-header bigger">码云</h2>
+                <ul>
+                    <li><a class="map-link cursor" href="https://gitee.com/?from=osc-index" target="_blank">Git代码托管</a></li>
+                    <li><a class="map-link cursor" href="https://team.oschina.net/" target="_blank">Team</a></li>
+                    <li><a class="map-link cursor" href="https://git.oschina.net/paas_osc" target="_blank">PaaS</a></li>
+                    <li><a class="map-link cursor" href="http://tool.oschina.net/" target="_blank">在线工具</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="map-header bigger">活动</h2>
+                <ul>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/event?tab=latest&amp;city=%E5%85%A8%E5%9B%BD&amp;time=all" target="_blank">线下活动</a></li>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/event/create" target="_blank">发起活动</a></li>
+                    <li><a class="map-link cursor" href="https://www.oschina.net/event/ych" target="_blank">源创会</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="map-header">关注微信公众号</h2>
+                <figure>
+                    <img class="wechat" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/wechat.jpg" title="关注微信公众号">
+                </figure>
+            </div>
+            <div>
+                <h2 class="map-header">下载手机客户端</h2>
+                <a href="https://www.oschina.net/app" title="下载手机客户端" class="dl_mob">
+                    <figure>
+                        <img src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/mob.png" title="下载手机客户端">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="osc-footer">
+        <div class="box vertical justify content-wrapper add-class">
+            <ul class="box vertical merge">
+                <li style="padding-right: 27px;">©开源中国(OSChina.NET)</li>
+                <li style="padding-right: 1em;"><a href="https://www.oschina.net/home/aboutosc" target="_blank" title="关于我们">关于我们</a></li>
+                <li style="padding-right: 1em;"><a href="https://www.oschina.net/home/aboutosc" title="联系我们">联系我们</a></li>
+                <li style="padding-right: 1em;"><a href="https://weibo.com/oschina2010" target="_blank" title="@新浪微博">@新浪微博</a></li>
+                <li><a class="map-link cursor" href="https://www.oschina.net/home/aboutosc#partners" target="_blank">合作单位</a></li>
+            </ul>
+
+            <div>
+                <span style="padding-right: 1em;">开源中国社区是工信部<a style="padding: 0 .5em;" href="http://www.copu.org.cn/" target="_blank" title="开源软件推进联盟">开源软件推进联盟</a>指定的官方社区</span>
+                <span><a href="http://www.miitbeian.gov.cn/" target="_blank" class="text-muted">粤ICP备12009483号-3</a>  深圳市奥思网络科技有限公司版权所有</span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+        <script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/question-main-658552980a47268d03d5886d1d48bc00541a8d91.js"></script> <script type="text/javascript">
+     (function (ww, dt) {
+         ww.__gac = {
+             domain: 'www.oschina.net'
+         };
+         if(!(/\/marketing\/ad-slice/.test(location.href))){
+             var script = dt.createElement('script');
+             script.setAttribute('type', 'text/javascript');
+             script.setAttribute('src', '//www.oschina.net/public/javascripts/cjl/ga.js?t=20160926');
+             dt.body.appendChild(script);
+         }
+     } (window, window.document));
+ </script><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/ga.js"></script>    <script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/highlight.pack(1).js"></script>
+    <link rel="stylesheet" type="text/css" href="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/zenburn.css">
+            <script>
+        window.addEventListener("load", function() {
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        });
+    </script>
+        <script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/question"></script>
+
+            <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type:"POST",
+                url:"/action/itags/pushRead",
+                data: {
+                    type:2,
+                    key:2280605
+                }
+            });
+        });
+    </script>
+    
+
+                
+<!-- Generated by OsChina.NET (init:0[ms],page:78[ms],ip:27.115.117.222) --><script type="text/javascript" src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/detail.js"></script><script src="./高手问答第 199 期 — 不仅是前端，你还可以用 JavaScript 来构建物联网 - 开源中国社区_files/f(3).txt" async=""></script></body></html>
